@@ -63,7 +63,7 @@
 		<input ng-model="productsCtrl.newProduct.product_name" require placeholder="date and time">
 		<input ng-model="productsCtrl.newProduct.ufc_code" require placeholder="party name">
 		
-		<button ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Reserve Park</button>
+		<button id= "reserve" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Reserve Park</button>
 	</div>
 	</div>
 	<table id="tabe" class="table table-bordered">
@@ -78,7 +78,7 @@
 			<p class="p_td"><td ng-bind="product.company_name"></td></p>
 			<p class="p_td"><td ng-bind="product.product_name"></td></p>		
 			<p class="p_td"><td ng-bind="product.ufc_code"></td></p>
-			<p class="p_td"><td><button class="btn btn-danger" ng-click="productsCtrl.removeProduct(product)">Remove</button></td></p>
+			<p class="p_td"><td><button class="btn btn-primary" id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button></td></p>
 			<!-- <td><button class="btn btn-default" ng-click="productsCtrl.editProduct(product)">Edit</button></td> -->
 		</tr>
 		
@@ -196,16 +196,17 @@
 	td{
 		
 		
-		background-color: white;
+		background-color: #faebd7;
 		opacity: 1;
 		font-weight: 600;
 		font-family: 'Open sans', Verdana, sans-serif;
 
 	}
 	th{
-		background-color: white;
+		background-color: steelblue;
 		opacity: 1;
 		font-family: 'Open sans', Verdana, sans-serif;
+		color:white; 
 	}
 	td button{
 		color: black;
@@ -250,6 +251,18 @@
 		transition: 4s;
 
 	}
+	#reserve:hover
+	{
+		background-color: green;
+		border: 0;
+		color: white;
+		transition: 2s;
+	}
+	#reserve
+	{
+		transition: 2s;
+	}
+	
 	/*.container-fluid
 	{
 		background-image: url('/img/view.jpg');
