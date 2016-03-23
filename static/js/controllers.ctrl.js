@@ -1,6 +1,35 @@
 app.controller('MainController', function(){
 	console.log("MainController");
 })
+app.controller('HomeController', function($interval, $scope) {
+
+	console.log("HomeController Loaded")
+
+		var dimages= [];
+		var numImages=8;
+
+		for (i=0; i<numImages; i++) {
+		  // dimages[i]=new Image();
+		  dimages.push("img/slideshow/"+(i+1)+".jpg");
+		}
+
+		var k = 0;
+		this.image = dimages[k];
+
+		var intervalId = $interval(function () {
+			console.log('Switching image!');
+			k++;
+			if (k > numImages) {
+				k = 0;
+			}
+			this.image = dimages[k];
+		}.bind(this), 3000);
+
+	$scope.$on('$destroy', function() {
+		$interval.cancel(intervalId);
+	});
+	
+})
 
 app.controller('ProductsController', function(ProductsFactory){
 	console.log("ProductsController Loaded");
