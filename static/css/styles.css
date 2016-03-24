@@ -204,8 +204,8 @@
 	}
 	#our_p1
 	{
-		font-size: .6em;
-		/*text-align: center;*/
+		font-size: .7em;
+		text-align: justify;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: darkgreen;
 		margin: 0 3% 0 3%;
