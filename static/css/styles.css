@@ -57,7 +57,7 @@
 	{
 		margin: auto;
 		width: 80%;
-		margin-top: 5%;
+		margin-top: 1%;
 		vertical-align: top;
 	}
 	img
@@ -140,9 +140,6 @@
 		
 		display: inline-block;
 		/*margin-left: 1%;*/
-		margin-bottom: 5%;
-
-
 	}
 	#contact_div
 	{
@@ -158,7 +155,7 @@
 	#ad3
 	{
 		width: 0%;
-		height: 0%;
+		height: 0px;
 		/*display: inline-block;*/
 		/*border: 1px solid grey;*/
 		/*text-align: center;*/
@@ -170,7 +167,7 @@
 	#ad4
 	{
 		width: 0%;
-		height: 0%;
+		height: 0px;
 		/*display: inline-block;*/
 		/*border: 1px solid grey;*/
 		/*text-align: center;*/
@@ -226,34 +223,35 @@
 		text-align: justify;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: darkgreen;
-		margin: 0 3% 0 3%;
+		margin: 0 3% 5% 3%;
 	}
 	#our_p3
 	{
-		font-size: 1.3em;
+		font-size: 1.15em;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: white;
 		margin-top: 1%;
-		margin-left: 1%;
+		margin-left: 3%;
 		
 		
 	}
 	#our_p5
 	{
-		font-size: 1.5em;
+		font-size: 1.25em;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: lightgrey;
-		margin-left: 1.5%;
+		margin-left: 3%;
 		margin-bottom: 1%;
+		margin-top: 3%;
 		
 	}
 	#our_p6
 	{
-		font-size: 1.1em;
+		font-size: 1em;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: white;
 		margin-top: 1%;
-		margin-left: 1%;
+		margin-left: 3%;
 		margin-bottom: 3%;
 		
 	}
@@ -271,12 +269,12 @@
 		width: 10%;
 		border: none;
 		/*margin-left: 5%;*/
-		margin-right: 5.25%;
+		margin-right: 5%;
 		margin-bottom: 5%;
 	}
 	.twitter
 	{
-		margin-left: 1%;
+		margin-left: 3%;
 	}
 	#adsense
 	{
