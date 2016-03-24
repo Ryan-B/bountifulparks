@@ -4,17 +4,14 @@
 	{
 		margin: 0;
 		padding: 0;
-		/*border: 1px dotted grey;*/
+		
 	}
-	body
-	{
-		margin: 1%;
-		background-color: darkgreen;	
-	}
+	
 	#main_wrapper
 	{
-		height: 100%;
-		width: 100%;
+		
+		width: 100% ;
+		margin: auto;
 		background-color: #fffff0;
 	}
 	#title
@@ -28,7 +25,7 @@
 		font-weight: 400;
 		margin: 0;
 		margin-bottom: 3%;
-		margin-top: 3%;
+		/*margin-top: 3%;*/
 	}
 	#b
 	{
@@ -43,7 +40,7 @@
 		font-size: 1em;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		margin: 0 5% 0 5%;
-		color: seagreen;
+		color: limegreen;
 	}
 	#title_ul
 	{
@@ -53,13 +50,13 @@
 	#title_ul2
 	{
 		text-align: center;
-		/*border-bottom: 1px solid forestgreen;*/
+		width: 100%;
+		
 	}
 	#img_div
 	{
 		margin: auto;
 		width: 80%;
-		display: inline-block;
 		margin-top: 5%;
 		vertical-align: top;
 	}
@@ -75,8 +72,8 @@
 		display: inline-block;
 		/*border: 1px solid grey;*/
 		vertical-align: top;
-		margin-top: 5%;
-		float: left;
+		/*margin-top: 5%;*/
+		/*float: left;*/
 		/*margin-left: 1%;*/
 		visibility: hidden;
 	}
@@ -87,8 +84,8 @@
 		display: inline-block;
 		/*border: 1px solid grey;*/
 		vertical-align: top;
-		margin-top: 5%;
-		float: right;
+		/*margin-top: 5%;*/
+		/*float: right;*/
 		/*margin-right: 1%;*/
 		visibility: hidden;
 	}
@@ -107,6 +104,10 @@
 		color: forestgreen;
 		/*text-align: center;*/
 		margin-bottom: 3%;
+	}
+	.last_reason
+	{
+		margin-bottom: 0;
 	}
 	#second_p
 	{
@@ -138,7 +139,7 @@
 		margin: auto;
 		
 		display: inline-block;
-		margin-left: 1%;
+		/*margin-left: 1%;*/
 		margin-bottom: 5%;
 
 
@@ -157,11 +158,11 @@
 	#ad3
 	{
 		width: 0%;
-		/*height: 385px;*/
-		display: inline-block;
-		border: 1px solid grey;
-		text-align: center;
-		float: left;
+		height: 0%;
+		/*display: inline-block;*/
+		/*border: 1px solid grey;*/
+		/*text-align: center;*/
+		/*float: left;*/
 		/*margin-left: 1%;*/
 		/*margin-top: 2.5%;*/
 		visibility: hidden;
@@ -169,11 +170,11 @@
 	#ad4
 	{
 		width: 0%;
-		/*height: 385px;*/
-		display: inline-block;
-		border: 1px solid grey;
-		text-align: center;
-		float: right;
+		height: 0%;
+		/*display: inline-block;*/
+		/*border: 1px solid grey;*/
+		/*text-align: center;*/
+		/*float: right;*/
 		/*margin-right: 1%;*/
 		/*margin-top: 2.5%;*/
 		visibility: hidden;
@@ -283,7 +284,7 @@
 	}
 	#adsense1
 	{
-		margin-bottom: 128%;
+		/*margin-bottom: 128%;*/
 	}
 	#adsense2
 	{
