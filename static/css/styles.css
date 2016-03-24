@@ -6,6 +6,17 @@
 		padding: 0;
 		/*border: 1px dotted grey;*/
 	}
+	body
+	{
+		margin: 1%;
+		background-color: darkgreen;	
+	}
+	#main_wrapper
+	{
+		height: 100%;
+		width: 100%;
+		background-color: #fffff0;
+	}
 	#title
 	{
 	
@@ -18,8 +29,6 @@
 		margin: 0;
 		margin-bottom: 3%;
 		margin-top: 3%;
-
-
 	}
 	#b
 	{
