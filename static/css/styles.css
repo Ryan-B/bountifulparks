@@ -278,15 +278,15 @@
 	}
 	#adsense
 	{
-		margin-bottom: 94%;
+		margin-bottom: 103%;
 	}
 	#adsense1
 	{
-		/*margin-bottom: 128%;*/
+		margin-bottom: 144%;
 	}
 	#adsense2
 	{
-		margin-bottom: 200%;
+		margin-bottom: 226%;
 	}
 	#background_p
 	{
@@ -297,10 +297,135 @@
 @media screen and (min-width: 1024px){
 	#title
 	{
-		font-size: 4em;
+		font-size: 5em;
+	}
+	#title_li
+	{
+		font-size: 2em;
 	}
 	#title_li:hover
 	{
 		color: darkkhaki;
+	}
+	#what
+	{
+		font-size: 2.5em;
+	}
+	#img_div
+	{
+		margin: auto;
+		width: 27.5%;
+		margin-top: 5%;
+		/*border: 1px solid black;*/
+		display: inline-block;
+	}
+	#ad
+	{
+		width: 20%;
+		height: 100%;
+		display: inline-block;
+		border: 1px solid grey;
+		vertical-align: top;
+		margin-top: 5%;
+		float: left;
+		margin-left: 1%;
+		visibility: visible;
+	}
+	#ad2
+	{
+		width: 20%;
+		height: 100%;
+		display: inline-block;
+		border: 1px solid grey;
+		vertical-align: top;
+		margin-top: 5%;
+		float: right;
+		margin-right: 1%;
+		visibility: visible;
+	}
+	#what_p
+	{
+		font-size: 1.325em;
+		text-align: center;
+		margin: 1% 0 8% 3%;
+
+	}
+	#second_section
+	{
+		width: 57%;
+		/*border: dashed 1px black;*/
+		margin: auto;
+		margin-top: 2.5%;
+	}
+	#second_p
+	{
+		font-size: 1.155em;
+	}
+	#ad3
+	{
+		width: 20%;
+		height: 100%;
+		display: inline-block;
+		border: 1px solid grey;
+		text-align: center;
+		float: left;
+		margin-left: 1%;
+		margin-top: 2.5%;
+		visibility: visible;
+	}
+	#ad4
+	{
+		width: 20%;
+		height: 100%;
+		display: inline-block;
+		border: 1px solid grey;
+		text-align: center;
+		float: right;
+		margin-right: 1%;
+		margin-top: 2.5%;
+		visibility: visible;
+	}
+	#bottom_section
+	{
+		margin: auto;
+
+	}
+	#img_li
+	{
+		width: 30.67%;
+	}
+	.img_left
+	{
+		margin-left: 3%;
+	}
+	#our_p1
+	{
+		font-size: .55em;
+	}
+	#our_p
+	{
+		font-size: 2em;
+	}
+	#contact2
+	{
+		display: inline-block;
+		width: 33%;
+		color: white;
+		background-color: forestgreen;
+		margin: 0;
+		vertical-align: top;
+		border-bottom: 1px forestgreen solid;
+	}
+	#logo
+	{
+		width: 10%;
+		border: none;
+		/*margin-left: 5%;*/
+		margin-right: 5%;
+		/*margin-bottom: 5%;*/
+	}
+	#bottom_section3
+	{
+		background-color: forestgreen;
 	}
 }
