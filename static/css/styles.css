@@ -345,7 +345,8 @@
 	}
 	#what_p
 	{
-		font-size: 1.325em;
+		/*font-size: 1.325em;*/
+		font-size: 1.6em;
 		text-align: center;
 		margin: 1% 0 8% 3%;
 
@@ -432,6 +433,11 @@
 		/*margin-left: 5%;*/
 		margin-right: 5%;
 		/*margin-bottom: 5%;*/
+	}
+	#wrap
+	{
+		width: 100%;
+		display: block
 	}
 	
 }
