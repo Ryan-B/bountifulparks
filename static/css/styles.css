@@ -125,7 +125,7 @@
 		font-size: .627em;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: forestgreen;
-		margin: 0 3% 1% 3%;
+		margin: 0 2% 1% 2%;
 	}
 	#what
 	{
@@ -206,10 +206,11 @@
 		display: inline-block;
 		
 		margin-top: 3%;
+
 	}
 	.img_left
 	{
-		margin-left: 5%;
+		margin-left: 2%;
 	}
 	#bottom_section
 	{
@@ -243,7 +244,7 @@
 		text-align: justify;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: darkgreen;
-		margin: 0 3% 5% 3%;
+		margin: 0 3% 1% 3%;
 	}
 	#our_p3
 	{
@@ -298,20 +299,28 @@
 	}
 	#adsense
 	{
-		margin-bottom: 103%;
+		margin-bottom: 104%;
 	}
 	#adsense1
 	{
-		margin-bottom: 144%;
+		margin-bottom: 140%;
 	}
 	#adsense2
 	{
-		margin-bottom: 164%;
+		margin-bottom: 386%;
 	}
 	#background_p
 	{
 		color: mediumseagreen;
 		font-size: 1.25em;
+	}
+	#click1
+	{
+		color: lime;
+	}
+	#click2
+	{
+		color: lightgreen;
 	}
 }
 @media screen and (min-width: 1024px){
@@ -346,6 +355,7 @@
 		margin-top: 1%;
 		/*border: 1px solid black;*/
 		display: inline-block;
+
 	}
 	#img_div2
 	{
@@ -388,11 +398,12 @@
 	}
 	#second_section3
 	{
-		width: 57%;
+		width: 55%;
 		display: inline-block;
-		margin-left: 3px;
+		margin-left: 1.2%;
 		margin-top: 2.5%;
 		background-image:url("/img/golf.jpg");
+		border: 2px solid forestgreen;
 	
 	}
 	#second_section
@@ -447,10 +458,12 @@
 	#img_li
 	{
 		width: 30.67%;
+		margin-right: 1.05%;
+		border-radius: 100%;
 	}
 	.img_left
 	{
-		margin-left: 3%;
+		/*margin-left: 3%;*/
 	}
 	#our_p1
 	{
@@ -462,10 +475,11 @@
 		1px -1px 0 #000,
 		-1px  1px 0 #000,
 		1px  1px 0 #000;
+		margin-top: 2%;
 	}
 	#our_p
 	{
-		font-size: 3.5em;
+		font-size: 4em;
 		text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
@@ -500,7 +514,8 @@
 	#our_p2
 	{
 		color: white;
-		font-size: 1.65em;
+		font-size: 1.4956em;
+		/*font-size: 2em;*/
 		 text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
