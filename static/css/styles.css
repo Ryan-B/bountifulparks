@@ -212,9 +212,9 @@
 	}
 	#img_li
 	{
-		width: 28%;
+		width: 30%;
 		display: inline-block;
-		
+		border-radius: 100%;
 		margin-top: 3%;
 
 	}
@@ -329,10 +329,13 @@
 	#click1
 	{
 		color: lime;
+		/*background-color: black;*/
 	}
 	#click2
 	{
 		color: rgb(58, 154, 116);
+		/*background-color: black;*/
+		
 	}
 }
 @media screen and (min-width: 1024px){
