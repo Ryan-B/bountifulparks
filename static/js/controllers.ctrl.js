@@ -6,7 +6,7 @@ app.controller('HomeController', function($interval, $scope) {
 	console.log("HomeController Loaded")
 
 		var dimages= [];
-		var numImages=20;
+		var numImages=9;
 
 		for (i=0; i<numImages; i++) {
 		  // dimages[i]=new Image();

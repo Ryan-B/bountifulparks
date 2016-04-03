@@ -311,7 +311,7 @@
 	}
 	#adsense
 	{
-		margin-bottom: 104%;
+		margin-bottom: 98%;
 	}
 	#adsense1
 	{
@@ -333,7 +333,8 @@
 	}
 	#click2
 	{
-		color: rgb(58, 154, 116);
+		color: #BFEE90;
+		color: mediumseagreen;
 		/*background-color: black;*/
 		
 	}
@@ -408,7 +409,7 @@
 		/*font-size: 1.325em;*/
 		font-size: 1.75em;
 		text-align: left;
-		margin: 3% 0 9% 9%;
+		margin: 3% 0 6% 3%;
 
 	}
 	#second_section3
