@@ -48,9 +48,9 @@
 	{
 		display: inline;
 		text-align: center;
-		font-size: 1em;
+		font-size: .8em;
 		font-family: 'Montserrat', Verdana, sans-serif;
-		margin: 0 5% 0 5%;
+		margin: 0 2% 0 2%;
 		color: limegreen;
 	}
 	#title_ul
@@ -70,6 +70,15 @@
 		width: 80%;
 		margin-top: 1%;
 		vertical-align: top;
+	}
+	#img_div2
+	{
+		margin: auto;
+		width: 40%;
+		margin-top: 1%;
+		vertical-align: top;
+		display: inline-block;
+		margin-bottom: 3%;
 	}
 	img
 	{
@@ -240,11 +249,13 @@
 	}
 	#our_p2
 	{
-		font-size: 1em;
-		text-align: justify;
+		font-size: .75em;
+		text-align: left;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: darkgreen;
-		margin: 0 3% 1% 3%;
+		margin-left: 1px;
+		display: inline-block;
+		width: 57%;
 	}
 	#our_p3
 	{
