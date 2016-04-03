@@ -74,11 +74,12 @@
 	#img_div2
 	{
 		margin: auto;
-		width: 40%;
+		width: 38%;
 		margin-top: 1%;
 		vertical-align: top;
 		display: inline-block;
 		margin-bottom: 3%;
+		margin-right: 2px;
 	}
 	img
 	{
@@ -253,7 +254,7 @@
 		text-align: left;
 		font-family: 'Montserrat', Verdana, sans-serif;
 		color: darkgreen;
-		margin-left: 1px;
+		margin-left: 2px;
 		display: inline-block;
 		width: 57%;
 	}
