@@ -68,3 +68,41 @@ app.controller('ProductsController', function(ProductsFactory){
 		})
 	}
 })
+
+app.controller('UsersController', function(UsersFactory){
+	console.log("UsersController Loaded");
+	var _this = this;
+	
+	var getUsers = function(){
+		console.log("UsersController getUsers");
+		
+		UsersFactory.getUsers(function(users){
+			console.log(this);
+			console.log(users);
+			_this.users = users;
+		});
+	}
+	this.addUser = function(newUser){
+		console.log("Clicked", newUser);
+		if(newUser){
+			UsersFactory.addUser(newUser, function(){
+				getUsers();
+				_this.newUser = {};
+			})
+		}
+	}
+	getUsers();
+
+	this.removeUser = function(user){
+		console.log("removeUser", user);
+		UsersFactory.removeUser(user, function(){
+			getUsers();
+		})
+	}
+	this.updateUser = function(user){
+		console.log("updateUser", user);
+		UsersFactory.updateUser(user, function(){
+			getUsers();
+		})
+	}
+})

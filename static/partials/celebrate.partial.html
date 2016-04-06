@@ -1,52 +1,39 @@
-<h1 id="title1">Celebrate <span id="b">B</span>ountiful</h1>
+<div id="celebrate_div">
 
-	<ul id="title_ul3">
-		<a href="#/"><li id="title_li2">Home</li></a>
-		<a href="#/discover"><li id="title_li2">Discover</li></a>
-		<a href="#/support"><li id="title_li2">Support</li></a>
-	</ul>
-
+	<div id="form">
+		<input ng-model="usersCtrl.newUser.first_name" require placeholder="first name">
+		<input ng-model="usersCtrl.newUser.last_name" require placeholder="last name">
+		<input ng-model="usersCtrl.newUser.email" require placeholder="email">
+		
+		<button id= "reserve" ng-click="usersCtrl.addUser(usersCtrl.newUser)">Register</button>
+	</div>
+	</div>
+	
+		<div ng-repeat="user in usersCtrl.users">
+			<p class="p_td" ng-bind="user.first_name"></td></p>
+			<p class="p_td" ng-bind="user.last_name"></td></p>		
+			<p class="p_td" ng-bind="user.email"></td></p>
+			<button id="remove" ng-click="usersCtrl.removeUser(user)">Remove</button>
+</div>
 
 <style type="text/css">
-	#title1
-	{
-	
-		font-family: 'Montserrat', Verdana, sans-serif;
-		font-size: 1.8em;
-		color: forestgreen;
-		text-decoration: none;
-		text-align: center;	
-		font-weight: 400;
-		margin: 0;
-		margin-bottom: 3%;
-	}
-	#title_li2
-	{
-		display: inline;
-		text-align: center;
-		font-size: 1em;
-		font-family: 'Montserrat', Verdana, sans-serif;
-		margin: 0 5% 0 5%;
-		color: forestgreen;
-	}
-	#title_ul3
-	{
-		text-align: center;
-	}
-	#title_li
-	{
-		visibility: hidden;
-		height: 0px;
-	}
-	#title_ul
-	{
-		visibility: hidden;
-		height: 0px;
-	}
-	#title
-	{
-		visibility: hidden;
-		height: 0px;
-		margin-top: 0px;
-	}
+*
+{
+	/*border: 1px dotted blue;*/
+}	
+#form
+{
+	margin: auto;
+	margin-top: 10%;
+	width: 50%;
+
+}
+input
+{
+	width: 200px;
+	font-size: 2em;
+}
+
+
+
 </style>

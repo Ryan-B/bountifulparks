@@ -1,14 +1,14 @@
 var mongoose = require('mongoose');
 
 var ProductSchema = new mongoose.Schema({
-	company_name: { type: String, trim: true },
-	product_name: { type: String, trim: true },
-	ufc_code: { type: String, trim: true },
+	first_name: { type: String, trim: true },
+	last_name: { type: String, trim: true },
+	email: { type: String, trim: true },
 	created_at: { type: Date, default: Date.now },
 	updated_at: { type: Date, default: Date.now }
 });
 
 var Product = mongoose.model('Product', ProductSchema);
-ProductSchema.path('company_name').required(true, "Company is required");
-ProductSchema.path('product_name').required(true, "Product is required");
-ProductSchema.path('ufc_code').required(true, "ufc_code is required");
+ProductSchema.path('first_name').required(true, "First Name is required");
+ProductSchema.path('last_name').required(true, "Last Name is required");
+ProductSchema.path('email').required(true, "Email is required");

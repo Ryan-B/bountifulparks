@@ -20,3 +20,26 @@ app.factory('ProductsFactory', function($http){
 		}
 	}
 })
+
+app.factory('UsersFactory', function($http){
+	return {
+		getUsers: function(callback){
+			console.log("UsersFactory getUsers");
+			$http.get('/users').success(function(response){
+				callback(response);
+			})
+		},
+		addUser: function(newUser, callback){
+			console.log("UsersFactory addUser");
+			$http.post('/users', newUser).success(function(response){
+				callback();
+			})
+		},
+		removeUser: function(user, callback){
+			console.log("UsersFactory RemoveUser", user);
+			$http.delete('/users/'+user._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})

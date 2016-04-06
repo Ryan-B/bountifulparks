@@ -1,5 +1,5 @@
 // var mongoose = require('mongoose');
-// var users = require('../controllers/users.js');
+var users = require('../controllers/users.js');
 var products = require('../controllers/products.js');
 // var orders = require('../controllers/orders.js');
 module.exports = function(app) {

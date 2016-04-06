@@ -319,7 +319,7 @@
 	}
 	#adsense2
 	{
-		margin-bottom: 386%;
+		margin-bottom: 512%;
 	}
 	#background_p
 	{
@@ -375,15 +375,14 @@
 	}
 	#img_div2
 	{
+		display: block;
 		margin: auto;
 		width: 25%;
-		display: inline-block;
 		margin-bottom: 2%;
-		margin-left: 6%;
 	}
 	#ad
 	{
-		width: 20%;
+		width: 15%;
 		height: 100%;
 		display: inline-block;
 		border: 2px solid grey;
@@ -396,7 +395,7 @@
 	}
 	#ad2
 	{
-		width: 20%;
+		width: 15%;
 		height: 100%;
 		display: inline-block;
 		border: 2px solid grey;
@@ -412,29 +411,29 @@
 		/*font-size: 1.325em;*/
 		font-size: 1.75em;
 		text-align: left;
-		margin: 3% 0 6% 3%;
+		margin: 3% 0 4% 3%;
 
 	}
 	#second_section3
 	{
-		width: 55%;
+		width: 65%;
 		display: inline-block;
 		margin-left: 1.2%;
 		margin-top: 2.5%;
-		background-image:url("/img/golf.jpg");
-		border: 2px solid forestgreen;
+		/*background-image:url("/img/golf.jpg");*/
+		/*border: 2px solid forestgreen;*/
 	
 	}
 	#second_section
 	{
-		width: 57%;
+		width: 65%;
 		display: inline-block;
 		margin: auto;
 		margin-top: 2.5%;
 	}
 	#second_section2
 	{
-		width: 53%;
+		width: 65%;
 		border: dashed 1px black;
 		display: inline-block;
 		margin-top: 2.5%;
@@ -442,11 +441,12 @@
 	}
 	#second_p
 	{
-		font-size: 1.55em;
+		font-size: 1.75em;
+		margin-left: 3%;
 	}
 	#ad3
 	{
-		width: 20%;
+		width: 15%;
 		height: 100%;
 		display: inline-block;
 		border: 2px solid grey;
@@ -459,7 +459,7 @@
 	}
 	#ad4
 	{
-		width: 20%;
+		width: 15%;
 		height: 100%;
 		display: inline-block;
 		border: 2px solid grey;
@@ -489,13 +489,13 @@
 	#our_p1
 	{
 		font-size: 1.5em;
-		color: lightgreen;
-		text-shadow: 
+		color: darkgreen;
+		/*text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
 		1px -1px 0 #000,
 		-1px  1px 0 #000,
-		1px  1px 0 #000;
+		1px  1px 0 #000;*/
 		margin-top: 2%;
 	}
 	#our_p
@@ -530,21 +530,23 @@
 	#wrap
 	{
 		width: 100%;
-		display: block
+		display: block;
+		border-top: 4px solid green;
+		margin-top: 2%;
 	}
 	#our_p2
 	{
-		color: white;
+		color: darkgreen;
 		/*font-size: 1.4956em;*/
 		font-size: 1.65em;
-		 text-shadow: 
+		/* text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
 		1px -1px 0 #000,
 		-1px  1px 0 #000,
-		1px  1px 0 #000;
+		1px  1px 0 #000;*/
 		display: inline-block;
-		width: 66%;
+		width: 100%;
 		vertical-align: top;
 		text-align: left;
 	}
