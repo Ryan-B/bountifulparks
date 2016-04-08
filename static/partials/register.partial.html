@@ -1,4 +1,5 @@
 <div id="form">
+	<p id="please">Please Sign Up Below!</p>
 		<input ng-model="usersCtrl.newUser.first_name" require placeholder="first name">
 		<input ng-model="usersCtrl.newUser.last_name" require placeholder="last name">
 		<input ng-model="usersCtrl.newUser.email" require placeholder="email">
@@ -7,26 +8,60 @@
 	</div>
 	</div>
 	
-		<div ng-repeat="user in usersCtrl.users">
-			<p class="p_td" ng-bind="user.first_name"></td></p>
-			<p class="p_td" ng-bind="user.last_name"></td></p>		
-			<p class="p_td" ng-bind="user.email"></td></p>
+		<div id="users" ng-repeat="user in usersCtrl.users">
+			<p class="p_td"><span ng-bind="user.first_name"></span>
+			  <span ng-bind="user.last_name"></span></p><br>		
+			<p class="p_td" ng-bind="user.email"></p>
 			<button id="remove" ng-click="usersCtrl.removeUser(user)">Remove</button>
 </div>
 
 <style type="text/css">
-	
+*
+{
+	background-color: #fffff0;
+}
 
 #form
 {
 	margin: auto;
 	margin-top: 10%;
-	width: 50%;
+	display: block;
+	/*border: 1px dotted black;*/
+	width: 51.5%;
 
 }
 input
 {
 	width: 200px;
 	font-size: 2em;
+	background-color: white;
+}
+#reserve
+{
+	font-size: 2em;
+	color: white;
+	background-color: black;
+}
+#please
+{
+	font-family: 'Montserrat', Verdana, sans-serif;
+	font-size: 2em;
+	color: darkgreen;
+	text-align: center;
+	margin-bottom: 5%;
+}
+#users
+{
+	width: 25%;
+	border: 1px solid darkgreen;
+	margin-top: 20%;
+	margin-left: 5%;
+}
+.p_td
+{
+	font-size: 1.5em;
+	font-family: 'Montserrat', Verdana, sans-serif;
+	vertical-align: center;
+	margin-bottom: 3%;
 }
 </style>

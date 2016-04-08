@@ -1,0 +1,38 @@
+<div id="message">
+		<div ng-repeat="product in productsCtrl.products">
+			<p class="p_td"><span id="name" ng-bind="product.user_name"></span></p>
+			<p class="p_td" ng-bind="product.message"></p>
+
+
+			<!-- <button id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button> -->
+		</div>
+</div>
+
+
+
+
+<style type="text/css">
+*
+{
+	background-color: #fffff0;
+}	
+#message
+{
+	margin: auto;
+	width: 64%;
+	border: 1px solid darkgreen;
+	margin-top: 10%;
+}
+.p_td
+{
+	font-size: 1.5em;
+	font-family: 'Montserrat', Verdana, sans-serif;
+	margin: 2%;
+}
+#name
+{
+	/*text-decoration: underline;*/
+	color: limegreen;
+	font-size: 2em;
+}
+</style>
