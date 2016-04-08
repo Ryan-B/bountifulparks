@@ -1,9 +1,9 @@
-<div id="message">
-		<div ng-repeat="product in productsCtrl.products">
-			<p class="p_td"><span id="name" ng-bind="product.user_name"></span><span ng-bind="product.created_at | date: short"</p>
+<div id="discover_div">
+	
+		<div id="message" ng-repeat="product in productsCtrl.products">
+			<p class="p_td"><span id="name" ng-bind="product.user_name"></span>
+			<span id="time" ng-bind="product.created_at | date: 'medium' "></p>
 			<p class="p_td" ng-bind="product.message"></p>
-
-
 			<!-- <button id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button> -->
 		</div>
 </div>
@@ -15,13 +15,17 @@
 *
 {
 	background-color: #fffff0;
+}
+#discover_div
+{
+	margin-top: 10%;
 }	
 #message
 {
 	margin: auto;
 	width: 64%;
 	border: 1px solid darkgreen;
-	margin-top: 10%;
+	margin-bottom: 5%;
 }
 .p_td
 {
@@ -35,5 +39,10 @@
 	color: limegreen;
 	font-size: 2em;
 	margin-right: 3%;
+}
+#time
+{
+	font-size: .67em;
+	font-style: italic;
 }
 </style>
