@@ -1,38 +1,65 @@
 <div id="celebrate_div">
 
-	<div id="form">
-		<input ng-model="usersCtrl.newUser.first_name" require placeholder="first name">
-		<input ng-model="usersCtrl.newUser.last_name" require placeholder="last name">
-		<input ng-model="usersCtrl.newUser.email" require placeholder="email">
-		
-		<button id= "reserve" ng-click="usersCtrl.addUser(usersCtrl.newUser)">Register</button>
-	</div>
-	</div>
 	
-		<div ng-repeat="user in usersCtrl.users">
-			<p class="p_td" ng-bind="user.first_name"></td></p>
-			<p class="p_td" ng-bind="user.last_name"></td></p>		
-			<p class="p_td" ng-bind="user.email"></td></p>
-			<button id="remove" ng-click="usersCtrl.removeUser(user)">Remove</button>
+
+	<div id="form">
+		<input ng-model="productsCtrl.newProduct.user_name" require placeholder="user name">
+		<textarea ng-model="productsCtrl.newProduct.message" require placeholder="message content"></textarea>
+		
+		
+		<button id= "reserve" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Post</button>
+	</div>
+
+	
+		<div ng-repeat="product in productsCtrl.products">
+			<p class="p_td" ng-bind="product.user_name"></td></p>
+			<p class="p_td" ng-bind="product.message"></td></p>		
+			<!-- <button id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button> -->
+		</div>
 </div>
 
 <style type="text/css">
 *
 {
-	/*border: 1px dotted blue;*/
+	background-color: #fffff0; 
 }	
 #form
 {
+	width: 100%;
 	margin: auto;
-	margin-top: 10%;
-	width: 50%;
+	margin-left: 5%;
 
 }
 input
 {
-	width: 200px;
+	width: 400px;
 	font-size: 2em;
+	display: block;
+	margin-bottom: 5%;
+	margin-top: 10%;
+	background-color: white;
 }
+textarea
+{
+	width: 80%;
+	height: 400px;
+	margin: auto;
+	font-size: 2em;
+	background-color: white;
+}
+#reserve
+{
+	display: block;
+	float: right;
+	margin-right: 20%;
+	height: 50px;
+	width: 100px;
+	color: white;
+	font-size: 2em;
+	background-color: black;
+	margin-bottom: 10%; 
+}
+
 
 
 

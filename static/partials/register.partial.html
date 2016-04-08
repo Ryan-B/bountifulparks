@@ -1,0 +1,32 @@
+<div id="form">
+		<input ng-model="usersCtrl.newUser.first_name" require placeholder="first name">
+		<input ng-model="usersCtrl.newUser.last_name" require placeholder="last name">
+		<input ng-model="usersCtrl.newUser.email" require placeholder="email">
+		
+		<button id= "reserve" ng-click="usersCtrl.addUser(usersCtrl.newUser)">Register</button>
+	</div>
+	</div>
+	
+		<div ng-repeat="user in usersCtrl.users">
+			<p class="p_td" ng-bind="user.first_name"></td></p>
+			<p class="p_td" ng-bind="user.last_name"></td></p>		
+			<p class="p_td" ng-bind="user.email"></td></p>
+			<button id="remove" ng-click="usersCtrl.removeUser(user)">Remove</button>
+</div>
+
+<style type="text/css">
+	
+
+#form
+{
+	margin: auto;
+	margin-top: 10%;
+	width: 50%;
+
+}
+input
+{
+	width: 200px;
+	font-size: 2em;
+}
+</style>

@@ -14,9 +14,14 @@ app.config(function($routeProvider){
 		templateUrl: '/partials/discover.partial.html'
 	})
 	.when('/celebrate', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/celebrate.partial.html'
+	})
+	.when('/register', {
 		controller: 'UsersController',
 		controllerAs: 'usersCtrl',
-		templateUrl: '/partials/celebrate.partial.html'
+		templateUrl: '/partials/register.partial.html'
 	})
 	.when('/support', {
 		controller: 'ProductsController',

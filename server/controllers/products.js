@@ -18,9 +18,8 @@ module.exports = (function(){
 		create: function(request, response){
 			console.log('Server / Ctrl / Products - Create', request.body)
 			var product = new Product;
-			product.first_name = request.body.first_name;
-			product.last_name = request.body.last_name;
-			product.email = request.body.email;
+			product.user_name = request.body.user_name;
+			product.message = request.body.message;
 			product.save(function(err){
 				if(err){
 					console.log(err);
