@@ -1,6 +1,6 @@
 <div id="message">
 		<div ng-repeat="product in productsCtrl.products">
-			<p class="p_td"><span id="name" ng-bind="product.user_name"></span></p>
+			<p class="p_td"><span id="name" ng-bind="product.user_name"></span><span ng-bind="product.created_at | date: short"</p>
 			<p class="p_td" ng-bind="product.message"></p>
 
 
@@ -34,5 +34,6 @@
 	/*text-decoration: underline;*/
 	color: limegreen;
 	font-size: 2em;
+	margin-right: 3%;
 }
 </style>
