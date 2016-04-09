@@ -28,4 +28,15 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/support.partial.html'
 	})
+	.when('/about', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/about.partial.html'
+	})
+	.when('/person_ofthe_month', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/person_ofthe_month.partial.html'
+	})
+
 });
