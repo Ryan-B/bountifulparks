@@ -1,5 +1,18 @@
+		
+		<ul id="discover_ul">
+			<li id="discover_li"><div id="li_div1"><p id="discover_p">PEOPLE</div></li>
+			<li id="discover_li"><div id="li_div2"><p id="discover_p">PLACES</div></li>
+			<li id="discover_li"><div id="li_div3"><p id="discover_p">BUSINESSES</div></li>
+			<li id="discover_li"><div id="li_div4"><p id="discover_p">SCHOOLS</div></li>
+			<li id="discover_li"><div id="li_div5"><p id="discover_p">EVENTS</div></li>
+		</ul>
+
+
+
+
+
+		<!-- <a href="#/places"><p id="places">Discover Bountiful Places</p></a> -->
 <div id="discover_div">
-	
 		<div id="message" ng-repeat="product in productsCtrl.products">
 			<p class="p_td"><span id="name" ng-bind="product.user_name"></span>
 			<span id="time" ng-bind="product.created_at | date: 'medium' "></p>
@@ -45,4 +58,88 @@
 	font-size: .67em;
 	font-style: italic;
 }
+#places
+{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1%;
+	margin-top: 5%;
+	font-family: 'Montserrat', Verdana, sans-serif;
+	color: seagreen;
+	
+}
+#places:hover
+{
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 1%;
+	font-family: 'Montserrat', Verdana, sans-serif;
+	color: darkkhaki;
+	
+}
+#discover_ul
+{
+	text-align: center;
+	margin-top: 10%;
+}
+#discover_li
+{
+	display: inline-block;
+	margin: 1%;
+	margin-bottom: 3%;
+	color: white;
+
+}
+#li_div1
+{
+	border: 1px solid black;
+	background-image: url("/img/discover1.JPG");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 267px;
+}
+#li_div2
+{
+	border: 1px solid black;
+	background-image: url("/img/discover2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 267px;
+}
+#li_div3
+{
+	border: 1px solid black;
+	background-image: url("/img/discover3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 267px;
+}
+#li_div4
+{
+	border: 1px solid black;
+	background-image: url("/img/discover4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 267px;
+}
+#li_div5
+{
+	border: 1px solid black;
+	background-image: url("/img/discover5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 400px;
+	height: 267px;
+}
+#discover_p
+{
+	margin-top: 57.5%;
+	background-color: forestgreen;
+	font-size: 2em;
+}
+
 </style>

@@ -38,5 +38,10 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/person_ofthe_month.partial.html'
 	})
+	.when('/places', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/places.partial.html'
+	})
 
 });
