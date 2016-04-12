@@ -4,6 +4,7 @@
 
 	<div id="form">
 		<input ng-model="productsCtrl.newProduct.user_name" require placeholder="user name">
+		<input id="photo_up" type="file" ngf-select="" ng-model="productsCtrl.newProduct.image" name="file" ngf-accept="'img/*'" required="">
 		<textarea ng-model="productsCtrl.newProduct.message" require placeholder="message content"></textarea>
 		
 		
@@ -16,7 +17,8 @@
 <style type="text/css">
 *
 {
-	background-color: #fffff0; 
+	background-color: #fffff0;
+
 }	
 
 
