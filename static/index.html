@@ -10,11 +10,13 @@
 	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="shortcut icon" sizes="196x196" href="icon-196.png">
 	<title>Our Bountiful Town</title>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTFbAShs-Vid1qTYfGxXzJgMJAVHM8vMs"></script>
 	<script type="text/javascript" src="/js/lib/angular.js"></script>
 	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
 	<script type="text/javascript" src="/js/modules.js"></script>
   	<script type="text/javascript" src="/js/factories.factory.js"></script>
   	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
+  	<script type="text/javascript" src="/js/directives.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -37,6 +39,7 @@
 			<a href="#/discover"><li id="title_li">Discover</li></a>
 			<a href="#/celebrate"><li id="title_li">Celebrate</li></a>
 			<a href="#/support"><li id="title_li">Support</li></a>
+			<a href="#/maps2"><li id="title_li">Maps</li></a>
 		</ul>
 
 
@@ -77,4 +80,5 @@
 
 </body>
 </html>
-
+<script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTFbAShs-Vid1qTYfGxXzJgMJAVHM8vMs&callback=initMap"></script>

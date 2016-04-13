@@ -48,5 +48,10 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/discover_business.partial.html'
 	})
+	.when('/maps2', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/maps2.partial.html'
+	})
 
 });
