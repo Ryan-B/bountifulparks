@@ -10,7 +10,7 @@ app.directive('directionsMap', function(){
       console.log(mapEl);
 
       var myLatLng = {lat: 40.884587,  lng: -111.884628 };
-      var bhs = {lat: 40.881538,  lng:  -111.871457};
+      var mueller_park = {lat: 40.868748,   lng: -111.846699 };
       
       // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
@@ -21,10 +21,10 @@ app.directive('directionsMap', function(){
         center: myLatLng
       });
 
-      var bhs_marker = new google.maps.Marker({
-        position: bhs,
+      var mueller_park_marker = new google.maps.Marker({
+        position: mueller_park,
         map: map,
-        title: "Bountiful High School"
+        title: "Mueller Park"
       });
     }
   };
