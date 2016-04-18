@@ -1122,7 +1122,7 @@
       width: 70%;
       margin: auto;
       margin-bottom: 10%;
-      margin-top: 3%;
+      margin-top: 10%;
       border: 1px solid black;
     }
     #green_circle
@@ -1130,7 +1130,7 @@
     	border: none;
     	width: 5%;
     	display: inline;
-    	margin-left: 0px;
+    	margin-left: 5%;
     	visibility: visible;
     }
     #img_div10
@@ -1142,6 +1142,23 @@
 	{
 		color: lime;
 		text-decoration: underline;
+	}
+	#img_div7
+	{
+		margin: auto;
+		width: 27.5%;
+		margin-top: 7.5%;
+		margin-bottom: 5%;
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		color: darkgreen;
+
+	}
+	#support_p
+	{
+		color: darkgreen;
+		margin-top: 1%;
+		margin-bottom: 2%;
 	}
 
 
