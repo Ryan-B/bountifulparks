@@ -621,7 +621,7 @@
 	}
 	#title_li
 	{
-		font-size: 1.25em;
+		font-size: 1.35em;
 		margin: 0px 1% 1% 1%;
 		border-top: 2px solid limegreen;
 		border-bottom: 2px solid limegreen;
@@ -1138,6 +1138,12 @@
 		visibility: hidden;
 		height: 0px;
 	}
+	#click1
+	{
+		color: lime;
+		text-decoration: underline;
+	}
+
 
 
 }
