@@ -48,15 +48,16 @@
 	{
 		display: inline;
 		text-align: center;
-		font-size: .5em;
 		font-family: 'Open Sans', sans-serif;
-		margin: 0 2% 0 2%;
 		color: limegreen;
+		margin: 0;
+		height: 0px;
+		visibility: hidden;
 	}
 	#title_ul
 	{
 		text-align: center;
-
+		height: 0px;
 	}
 	#title_ul2
 	{
@@ -70,6 +71,25 @@
 		width: 80%;
 		margin-top: 1%;
 		vertical-align: top;
+	}
+	#img_div10
+	{
+		margin: auto;
+		width: 7.5%;
+		margin-top: 1%;
+		vertical-align: top;
+	}
+	#img_div20
+	{
+		margin: auto;
+		width: 77.25%;
+		margin-top: 10%;
+		vertical-align: top;
+		margin-bottom: 2.5%;
+	}
+	#menu_stack
+	{
+		border: none;
 	}
 	#img_div2
 	{
@@ -120,10 +140,10 @@
 	}
 	#what_p
 	{
-		font-size: 1.2em;
+		font-size: 1.75em;
 		font-family: 'Open Sans', sans-serif;
 		color: forestgreen;
-		/*text-align: center;*/
+		display: inline-block;
 		margin-bottom: 3%;
 	}
 	.last_reason
@@ -139,7 +159,6 @@
 	}
 	#what
 	{
-		margin-top: 10%;
 		font-size: .85em;
 		font-family: 'Open Sans', sans-serif;
 		color: forestgreen;
@@ -580,6 +599,14 @@
       margin-left: 1%;
       /*border: 1px solid black;*/
     }
+    #green_circle
+    {
+    	border: none;
+    	width: 5%;
+    	display: inline-block;
+    	margin-left: 0px;
+    	visibility: hidden;
+    }
 }
 
 @media screen and (min-width: 1024px){
@@ -595,11 +622,12 @@
 	#title_li
 	{
 		font-size: 1.25em;
-		margin-bottom: 1%;
+		margin: 0px 1% 1% 1%;
 		border-top: 2px solid limegreen;
 		border-bottom: 2px solid limegreen;
 		padding: .5% .5% .5% .5%;
 		font-style: italic;
+		visibility: visible;
 	}
 	#title_li:hover
 	{
@@ -614,14 +642,14 @@
 	}
 	#div_li
 	{
-		margin-top: 1%;
+		margin: 1%;
 	}
 	#img_div
 	{
 		margin: auto;
 		width: 27.5%;
 		margin-top: 1%;
-		/*border: 1px solid black;*/
+		text-align: left;
 		display: inline-block;
 
 	}
@@ -664,7 +692,7 @@
 		/*font-size: 1.325em;*/
 		font-size: 1.75em;
 		text-align: left;
-		margin: 0% 0 4% 3%;
+		margin: 0 0 3% 3%;
 		display: inline-block;
 
 	}
@@ -796,7 +824,7 @@
 	{
 		color: darkgreen;
 		
-		font-size: 2.5em;
+		font-size: 2em;
 		/* text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
@@ -1103,7 +1131,13 @@
     	width: 5%;
     	display: inline;
     	margin-left: 0px;
+    	visibility: visible;
     }
+    #img_div10
+	{
+		visibility: hidden;
+		height: 0px;
+	}
 
 
 }
