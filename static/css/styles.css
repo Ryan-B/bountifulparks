@@ -19,7 +19,8 @@
 	
 		font-family: 'Open Sans', sans-serif;
 		font-size: 1.8em;
-		color:  #5BC85B;
+		/*color:  #5BC85B;*/
+		color: green;
 		text-decoration: none;
 		text-align: center;	
 		font-weight: 400;
@@ -34,9 +35,9 @@
 	}
 	#b
 	{
-		font-size: 2em;
+		font-size: 1.5em;
 		font-weight: 900;
-		color: darkgreen;
+		color: forestgreen;
 		text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
@@ -620,8 +621,8 @@
 	}
 	#title_li
 	{
-		font-size: 1.35em;
-		margin: 0px 1% 1% 1%;
+		font-size: 1.25em;
+		margin: 0px .75% 1% .75%;
 		border-top: 2px solid limegreen;
 		border-bottom: 2px solid limegreen;
 		padding: .5% .5% .5% .5%;
@@ -635,9 +636,9 @@
 	}
 	#what
 	{
-		font-size: 3em;
+		font-size: 3.5em;
 		margin-top: 10%;
-		margin-bottom: 3%;
+		margin-bottom: 2%;
 	}
 	#div_li
 	{
@@ -646,7 +647,7 @@
 	#img_div
 	{
 		margin: auto;
-		width: 27.5%;
+		width: 33.3%;
 		margin-top: 1%;
 		text-align: left;
 		display: inline-block;
@@ -689,17 +690,17 @@
 	#what_p
 	{
 		/*font-size: 1.325em;*/
-		font-size: 1.75em;
+		font-size: 2.25em;
 		text-align: left;
-		margin: 0 0 3% 3%;
+		margin: 0 0 1% 1%;
 		display: inline-block;
 
 	}
 	#second_section3
 	{
-		width: 65%;
-		display: inline-block;
-		margin-left: 1.2%;
+		width: 74%;
+		display: block;
+		margin: auto;
 		margin-top: 2.5%;
 		/*background-image:url("/img/golf.jpg");*/
 		/*border: 2px solid forestgreen;*/
@@ -707,13 +708,13 @@
 	}
 	#second_section
 	{
-		width: 65%;
-		display: inline-block;
+		width: 90%;
+		display: block;
 		margin: auto;
 	}
 	#second_section2
 	{
-		width: 65%;
+		width: 74%;
 		border: dashed 1px black;
 		display: inline-block;
 		margin-top: 2.5%;
@@ -721,8 +722,8 @@
 	}
 	#second_p
 	{
-		font-size: 1.75em;
-		margin-left: 3%;
+		font-size: 2.15em;
+		margin-left: 11%;
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
@@ -760,16 +761,16 @@
 	}
 	#img_li
 	{
-		width: 30.67%;
+		width: 25%;
 		display: inline-block;
 		/*margin-right: 1.05%;*/
 		border-radius: 100%;
 		margin-top: 1%;
-		margin-left: 1.5%;
+		margin-left: 3%;
 	}
-	.img_left
+	#ovals
 	{
-		/*margin-left: 3%;*/
+		margin-left: 8%;
 	}
 	#our_p1
 	{
@@ -819,7 +820,7 @@
 		display: block;
 		border-top: 4px solid green;
 		padding-top: 2%;
-		margin-top: 1%;
+		margin-top: 5%;
 	}
 
 	#our_p2
@@ -881,8 +882,9 @@
 	{
 		width: 100%;
 		border: 2px solid black;
-		margin-bottom: 15%;
+		margin-bottom: 5%;
 		margin-left: 10%;
+		margin-top: 1%;
 	}
 	#about_img2
 	{
@@ -909,7 +911,7 @@
 		display: inline-block;
 		/*width: 45%;*/
 		vertical-align: top;
-		font-size: 1.7em;
+		font-size: 1em;
 		text-align: justify;
 		color: forestgreen;
 	}
@@ -939,6 +941,14 @@
 		width: 100%;
 		/*margin-top: 2%;*/
 		margin-left: 10%;
+		visibility: visible;
+	}
+	#greenline3
+	{
+		border-top: 4px solid green;
+		width: 100%;
+		/*margin-top: 2%;*/
+		/*margin-left: 10%;*/
 		visibility: visible;
 	}
 		#person_title
@@ -1143,7 +1153,7 @@
     	border: none;
     	width: 5%;
     	display: inline;
-    	margin-left: 5%;
+    	margin-left: 7.5%;
     	visibility: visible;
     }
     #img_div10
@@ -1154,6 +1164,11 @@
 	#click1
 	{
 		color: lime;
+		text-decoration: underline;
+	}
+	#click1:hover
+	{
+		color: darkkhaki;
 		text-decoration: underline;
 	}
 	#img_div7
@@ -1172,5 +1187,15 @@
 		color: darkgreen;
 		margin-top: 1%;
 		margin-bottom: 2%;
+	}
+	.bottom_li
+	{
+		display: inline;
+	}
+	#bottom_li
+	{
+		margin: 6.25%;
+		width: 20%;
+
 	}
 }
