@@ -1,0 +1,48 @@
+<div id="celebrate_div">
+
+	
+	<p id="person_title">Contact Us</p>
+	<div id="form">
+		<input ng-model="contactsCtrl.newContact.name" require placeholder="name">
+		<input ng-model="contactsCtrl.newContact.email" require placeholder="email">
+		<input ng-model="contactsCtrl.newContact.subject" require placeholder="subject">
+		<textarea ng-model="contactsCtrl.newContact.message" require placeholder="message"></textarea>
+		<button id= "reserve" ng-click="contactsCtrl.addContact(contactsCtrl.newContact)">Post</button>
+	</div>
+
+	
+</div>
+
+<div id="celebrate_div">
+		<div id="message" ng-repeat="contact in contactsCtrl.contacts">
+			<p class="p_td"><span id="name" ng-bind="contact.name"></span>
+			<p class="p_td"><span id="name" ng-bind="contact.email"></span>
+			<p class="p_td"><span id="name" ng-bind="contact.subject"></span>
+			<span id="time" ng-bind="contact.created_at | date: 'medium' "></span></p>
+			<p class="p_td" ng-bind="contact.message"></p>
+			<button id="remove" ng-click="contactsCtrl.removeContact(contact)">Remove</button>
+		</div>
+</div>
+
+<div id="bottom_section3">
+			<div id="contact_div">
+				<div id="contact2">
+					<p id="our_p5">Email Us:</p>
+					<p id="our_p3">ourbountifultown@gmail.com</p><br>
+				</div>
+				<div id="contact2">
+					<p id="our_p5">Follow Us:</p>
+					<img class="twitter" id="logo" src="img/twitter.png">
+					<img id="logo" src="img/facebook.jpg">
+					<img id="logo" src="img/google.png">
+					<img id="logo" src="img/youtube.png">
+					<img id="logo" src="img/pinterest.png">
+					<img id="logo" src="img/instagram.png">
+				</div>
+				<div id="contact2">
+					<p id="our_p5">Write Us:</p>
+					<p id="our_p3">P.O. Box 706, Bountiful, UT 84010</p><br>
+				</div>
+			</div>
+		</div>
+

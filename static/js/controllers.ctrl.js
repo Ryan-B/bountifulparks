@@ -112,3 +112,41 @@ app.controller('UsersController', function(UsersFactory){
 		})
 	}
 })
+
+app.controller('ContactsController', function(ContactsFactory){
+	console.log("ContactsController Loaded");
+	var _this = this;
+	
+	var getContacts = function(){
+		console.log("ContactsController getContacts");
+		
+		ContactsFactory.getContacts(function(contacts){
+			console.log(this);
+			console.log(contacts);
+			_this.contacts = contacts;
+		});
+	}
+	this.addContact = function(newContact){
+		console.log("Clicked", newContact);
+		if(newContact){
+			ContactsFactory.addContact(newContact, function(){
+				getContacts();
+				_this.newContact = {};
+			})
+		}
+	}
+	getContacts();
+
+	this.removeContact = function(contact){
+		console.log("removeContact", contact);
+		ContactsFactory.removeContact(contact, function(){
+			getContacts();
+		})
+	}
+	this.updateContact = function(contact){
+		console.log("updateContact", contact);
+		ContactsFactory.updateContact(contact, function(){
+			getContacts();
+		})
+	}
+})

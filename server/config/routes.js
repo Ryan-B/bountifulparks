@@ -1,7 +1,7 @@
 // var mongoose = require('mongoose');
 var users = require('../controllers/users.js');
 var products = require('../controllers/products.js');
-// var orders = require('../controllers/orders.js');
+var contacts = require('../controllers/contacts.js');
 module.exports = function(app) {
 
 	app
@@ -36,6 +36,21 @@ module.exports = function(app) {
 	.delete('/products/:id', function(request, response) {products.destroy(request, response) })
 	// Update
 	.patch('/products/:id', function(request, response) {products.update(request, response) })
+//Contact
+	// Index
+	.get('/contacts', function(request, response) {contacts.index(request, response) })
+	// New
+	.get('/contacts/new', function(request, response) {contacts.create(request, response) })
+	// Show
+	.get('/contacts/:id', function(request, response) {contacts.show(request, response) })
+	// Edit
+	.get('/contacts/:id/edit', function(request, response) {contacts.edit(request, response) })
+	// Create
+	.post('/contacts', function(request, response) {contacts.create(request, response) })
+	// Destroy
+	.delete('/contacts/:id', function(request, response) {contacts.destroy(request, response) })
+	// Update
+	.patch('/contacts/:id', function(request, response) {contacts.update(request, response) })
 //Order
 	// Index
 	.get('/orders', function(request, response) {orders.index(request, response) })

@@ -43,3 +43,26 @@ app.factory('UsersFactory', function($http){
 		}
 	}
 })
+
+app.factory('ContactsFactory', function($http){
+	return {
+		getContacts: function(callback){
+			console.log("ContactsFactory getContacts");
+			$http.get('/contacts').success(function(response){
+				callback(response);
+			})
+		},
+		addContact: function(newContact, callback){
+			console.log("ContactsFactory addContact");
+			$http.post('/contacts', newContact).success(function(response){
+				callback();
+			})
+		},
+		removeContact: function(contact, callback){
+			console.log("ContactsFactory RemoveContact", contact);
+			$http.delete('/contacts/'+contact._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})

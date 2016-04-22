@@ -58,5 +58,15 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/menu.partial.html'
 	})
+	.when('/guide', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/guide.partial.html'
+	})
+	.when('/contact', {
+		controller: 'ContactsController',
+		controllerAs: 'contactsCtrl',
+		templateUrl: '/partials/contact_us.partial.html'
+	})
 
 });
