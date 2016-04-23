@@ -37,7 +37,7 @@
 	{
 		font-size: 1.5em;
 		font-weight: 900;
-		color: forestgreen;
+		color: darkgreen;
 		text-shadow: 
 		 2px 2px 0 #000, 
 		-1px -1px 0 #000,  
@@ -1027,8 +1027,8 @@
 		border-top: 4px solid green;
 		width: 76%;
 		margin: auto;
-		margin-bottom: 20px;
-		margin-top: 20px;
+		margin-bottom: 40px;
+		margin-top: 40px;
 		visibility: visible;
 	}
 		#person_title
@@ -1046,7 +1046,7 @@
 		text-align: center;
 		font-family: 'Open Sans', sans-serif;
 		color: grey;
-		margin-bottom: 5%;
+		margin-bottom: 1%;
 	}
 	#discover_div
 	{
@@ -1118,7 +1118,7 @@
 		width: 400px;
 		height: 267px;
 	}
-	#li_div:hover > p
+	#li_div1:hover > p
 	{
 		background-color: lightgrey;
 		color: forestgreen;
