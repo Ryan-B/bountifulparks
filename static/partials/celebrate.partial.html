@@ -4,6 +4,7 @@
 
 	<div id="form">
 		<input ng-model="productsCtrl.newProduct.user_name" require placeholder="user name">
+		<input ng-model="productsCtrl.newProduct.title" require placeholder="headline">
 		<textarea ng-model="productsCtrl.newProduct.message" require placeholder="message content"></textarea>
 		<button id= "reserve" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Post</button>
 	</div>

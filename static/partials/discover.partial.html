@@ -12,14 +12,19 @@
 
 
 		<!-- <a href="#/places"><p id="places">Discover Bountiful Places</p></a> -->
-<div id="discover_div">
-		<div id="message" ng-repeat="product in productsCtrl.products">
-			<p class="p_td"><span id="name" ng-bind="product.user_name"></span>
-			<span id="time" ng-bind="product.created_at | date: 'medium' "></span></p>
-			<p class="p_td" ng-bind="product.message"></p>
+	<div ng-repeat="product in productsCtrl.products">
+		<div id="greenline3"></div>
+		<div id="about_div1">
+			<img id="about_img3" src="/img/lake2.png">
+		</div>
+		<div id="about_div2">
+			<p id="person_title"><span ng-bind="product.title"></span>
+			<p id="dateline">Contributed by <span ng-bind="product.user_name"></span>
+			<!-- <span id="time" ng-bind="product.created_at | date: 'medium' "></span></p> -->
+			<p id="about_text" ng-bind="product.message"></p>
 			<button id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button>
 		</div>
-</div>
+	</div>
 
 <div id="bottom_section3">
 			<div id="contact_div">

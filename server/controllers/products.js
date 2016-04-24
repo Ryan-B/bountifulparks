@@ -19,6 +19,7 @@ module.exports = (function(){
 			console.log('Server / Ctrl / Products - Create', request.body)
 			var product = new Product;
 			product.user_name = request.body.user_name;
+			product.title = request.body.title;
 			product.message = request.body.message;
 			product.save(function(err){
 				if(err){

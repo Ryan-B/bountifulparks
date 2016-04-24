@@ -33,10 +33,10 @@
 </div>
 <div id="greenline3"></div>
 <div id="about_div1">
-	<img id="about_img3" src="/img/church2.jpg">
-	<img id="about_img3" src="/img/sunset2.png">
 	<img id="about_img3" src="/img/sign.jpg">
+	<img id="about_img3" src="/img/sunset2.png">
 	<img id="about_img3" src="/img/v.jpg">
+	<img id="about_img3" src="/img/slideshow/14.jpg">
 </div>
 <div id="about_div2">
 	<p id="person_title">Living My Life Bountifully...</p> 
@@ -49,6 +49,20 @@ People usually leave for jobs or education. Summer also brings out our local Far
 
 Share  your own memories and appreciation for Bountiful's Spring evening drives, small town charm, or anything else by clicking CELEBRATE and writing a post or two of you own.  Then share your thoughts with your own social network.</p>
 </div>
+
+<div ng-repeat="product in productsCtrl.products">
+		<div id="greenline3"></div>
+		<div id="about_div1">
+			<img id="about_img3" src="/img/lake2.png">
+		</div>
+		<div id="about_div2">
+			<p id="person_title"><span ng-bind="product.title"></span>
+			<p id="dateline">Contributed by <span ng-bind="product.user_name"></span>
+			<!-- <span id="time" ng-bind="product.created_at | date: 'medium' "></span></p> -->
+			<p id="about_text" ng-bind="product.message"></p>
+			<button id="remove" ng-click="productsCtrl.removeProduct(product)">Remove</button>
+		</div>
+	</div>
 
 <div id="bottom_section3">
 			<div id="contact_div">
