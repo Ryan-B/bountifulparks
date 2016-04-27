@@ -1,16 +1,18 @@
-<div id="celebrate_div">
-
-	<p id="person_title">Celebrate Bountiful People</p>
-
-	<div id="form">
-		<input ng-model="productsCtrl.newProduct.user_name" require placeholder="user name">
-		<input ng-model="productsCtrl.newProduct.title" require placeholder="headline">
-		<textarea ng-model="productsCtrl.newProduct.message" require placeholder="message content"></textarea>
-		<button id= "reserve" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Post</button>
+<div ng-repeat="eventt in eventtsCtrl.eventts">
+		<div id="greenline3"></div>
+			<p id="person_title"><span ng-bind="eventt.title"></span>
+			<p id="dateline">Contributed by <span ng-bind="eventt.user_name"></span>
+		<div id="about_div1">
+			<img id="about_img3" src="/img/sunset2.png">
+		</div>
+		<div id="about_div2">
+			<!-- <span id="time" ng-bind="eventt.created_at | date: 'medium' "></span></p> -->
+			<p id="about_text" ng-bind="eventt.message"></p>
+			<button id="remove" ng-click="eventtsCtrl.removeEventt(eventt)">Remove</button>
+		</div>
 	</div>
 
-	
-</div>
+
 
 <div id="bottom_section3">
 			<div id="contact_div">
@@ -33,4 +35,3 @@
 				</div>
 			</div>
 		</div>
-

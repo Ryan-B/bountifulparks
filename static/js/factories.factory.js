@@ -66,3 +66,94 @@ app.factory('ContactsFactory', function($http){
 		}
 	}
 })
+
+app.factory('Business_PostsFactory', function($http){
+	return {
+		getBusiness_Posts: function(callback){
+			console.log("Business_PostsFactory getBusiness_Posts");
+			$http.get('/business_posts').success(function(response){
+				callback(response);
+			})
+		},
+		addBusiness_Post: function(newBusiness_Post, callback){
+			console.log("Business_PostsFactory addBusiness_Post");
+			$http.post('/business_posts', newBusiness_Post).success(function(response){
+				callback();
+			})
+		},
+		removeBusiness_Post: function(business_post, callback){
+			console.log("Business_PostsFactory RemoveBusiness_Post", business_post);
+			$http.delete('/business_posts/'+business_post._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+app.factory('Places_PostsFactory', function($http){
+	return {
+		getPlaces_Posts: function(callback){
+			console.log("Places_PostsFactory getPlaces_Posts");
+			$http.get('/places_posts').success(function(response){
+				callback(response);
+			})
+		},
+		addPlaces_Post: function(newPlaces_Post, callback){
+			console.log("Places_PostsFactory addPlaces_Post");
+			$http.post('/places_posts', newPlaces_Post).success(function(response){
+				callback();
+			})
+		},
+		removePlaces_Post: function(place_post, callback){
+			console.log("Places_PostsFactory RemovePlaces_Post", place_post);
+			$http.delete('/places_posts/'+place_post._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+
+app.factory('SchoolsFactory', function($http){
+	return {
+		getSchools: function(callback){
+			console.log("SchoolsFactory getSchools");
+			$http.get('/schools').success(function(response){
+				callback(response);
+			})
+		},
+		addSchool: function(newSchool, callback){
+			console.log("SchoolsFactory addSchool");
+			$http.post('/schools', newSchool).success(function(response){
+				callback();
+			})
+		},
+		removeSchool: function(school, callback){
+			console.log("SchoolsFactory RemoveSchool", school);
+			$http.delete('/schools/'+school._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+
+app.factory('EventtsFactory', function($http){
+	return {
+		getEventts: function(callback){
+			console.log("EventtsFactory getEventts");
+			$http.get('/eventts').success(function(response){
+				callback(response);
+			})
+		},
+		addEventt: function(newEventt, callback){
+			console.log("EventtsFactory addEventt");
+			$http.post('/eventts', newEventt).success(function(response){
+				callback();
+			})
+		},
+		removeEventt: function(eventt, callback){
+			console.log("EventtsFactory RemoveEventt", eventt);
+			$http.delete('/eventts/'+eventt._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})

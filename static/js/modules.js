@@ -39,13 +39,13 @@ app.config(function($routeProvider){
 		templateUrl: '/partials/person_ofthe_month.partial.html'
 	})
 	.when('/places', {
-		controller: 'ProductsController',
-		controllerAs: 'productsCtrl',
+		controller: 'Places_PostsController',
+		controllerAs: 'places_postsCtrl',
 		templateUrl: '/partials/places.partial.html'
 	})
 	.when('/business', {
-		controller: 'ProductsController',
-		controllerAs: 'productsCtrl',
+		controller: 'Business_PostsController',
+		controllerAs: 'business_postsCtrl',
 		templateUrl: '/partials/discover_business.partial.html'
 	})
 	.when('/maps2', {
@@ -68,5 +68,41 @@ app.config(function($routeProvider){
 		controllerAs: 'contactsCtrl',
 		templateUrl: '/partials/contact_us.partial.html'
 	})
+	.when('/facts', {
+		controller: 'ContactsController',
+		controllerAs: 'contactsCtrl',
+		templateUrl: '/partials/facts.partial.html'
+	})
+	.when('/celebrate_business', {
+		controller: 'Business_PostsController',
+		controllerAs: 'business_postsCtrl',
+		templateUrl: '/partials/celebrate_business.partial.html'
+	})
+	.when('/celebrate_places', {
+		controller: 'Places_PostsController',
+		controllerAs: 'places_postsCtrl',
+		templateUrl: '/partials/celebrate_places.partial.html'
+	})
+	.when('/celebrate_schools', {
+		controller: 'SchoolsController',
+		controllerAs: 'schoolsCtrl',
+		templateUrl: '/partials/celebrate_schools.partial.html'
+	})
+	.when('/schools', {
+		controller: 'SchoolsController',
+		controllerAs: 'schoolsCtrl',
+		templateUrl: '/partials/schools.partial.html'
+	})
+	.when('/celebrate_eventts', {
+		controller: 'EventtsController',
+		controllerAs: 'eventtsCtrl',
+		templateUrl: '/partials/celebrate_eventts.partial.html'
+	})
+	.when('/eventts', {
+		controller: 'EventtsController',
+		controllerAs: 'eventtsCtrl',
+		templateUrl: '/partials/eventts.partial.html'
+	})
+	
 
 });

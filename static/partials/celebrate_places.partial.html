@@ -1,16 +1,18 @@
 <div id="celebrate_div">
 
-	<p id="person_title">Celebrate Bountiful People</p>
+	<p id="person_title">Celebrate Bountiful Places</p>
 
 	<div id="form">
-		<input ng-model="productsCtrl.newProduct.user_name" require placeholder="user name">
-		<input ng-model="productsCtrl.newProduct.title" require placeholder="headline">
-		<textarea ng-model="productsCtrl.newProduct.message" require placeholder="message content"></textarea>
-		<button id= "reserve" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">Post</button>
+		<input ng-model="places_postsCtrl.newPlaces_Post.user_name" require placeholder="user name">
+		<input ng-model="places_postsCtrl.newPlaces_Post.title" require placeholder="headline">
+		<textarea ng-model="places_postsCtrl.newPlaces_Post.message" require placeholder="message content"></textarea>
+		<button id= "reserve" ng-click="places_postsCtrl.addPlaces_Post(places_postsCtrl.newPlaces_Post)">Post</button>
 	</div>
 
 	
 </div>
+
+
 
 <div id="bottom_section3">
 			<div id="contact_div">
@@ -33,4 +35,3 @@
 				</div>
 			</div>
 		</div>
-

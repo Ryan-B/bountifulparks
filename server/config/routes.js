@@ -2,6 +2,10 @@
 var users = require('../controllers/users.js');
 var products = require('../controllers/products.js');
 var contacts = require('../controllers/contacts.js');
+var business_posts = require('../controllers/business_posts.js');
+var places_posts = require('../controllers/places_posts.js');
+var schools = require('../controllers/schools.js');
+var eventts = require('../controllers/eventts.js');
 module.exports = function(app) {
 
 	app
@@ -36,6 +40,66 @@ module.exports = function(app) {
 	.delete('/products/:id', function(request, response) {products.destroy(request, response) })
 	// Update
 	.patch('/products/:id', function(request, response) {products.update(request, response) })
+//School
+	// Index
+	.get('/schools', function(request, response) {schools.index(request, response) })
+	// New
+	.get('/schools/new', function(request, response) {schools.create(request, response) })
+	// Show
+	.get('/schools/:id', function(request, response) {schools.show(request, response) })
+	// Edit
+	.get('/schools/:id/edit', function(request, response) {schools.edit(request, response) })
+	// Create
+	.post('/schools', function(request, response) {schools.create(request, response) })
+	// Destroy
+	.delete('/schools/:id', function(request, response) {schools.destroy(request, response) })
+	// Update
+	.patch('/schools/:id', function(request, response) {schools.update(request, response) })
+//Eventt
+	// Index
+	.get('/eventts', function(request, response) {eventts.index(request, response) })
+	// New
+	.get('/eventts/new', function(request, response) {eventts.create(request, response) })
+	// Show
+	.get('/eventts/:id', function(request, response) {eventts.show(request, response) })
+	// Edit
+	.get('/eventts/:id/edit', function(request, response) {eventts.edit(request, response) })
+	// Create
+	.post('/eventts', function(request, response) {eventts.create(request, response) })
+	// Destroy
+	.delete('/eventts/:id', function(request, response) {eventts.destroy(request, response) })
+	// Update
+	.patch('/eventts/:id', function(request, response) {eventts.update(request, response) })
+//Business_Post
+	// Index
+	.get('/business_posts', function(request, response) {business_posts.index(request, response) })
+	// New
+	.get('/business_posts/new', function(request, response) {business_posts.create(request, response) })
+	// Show
+	.get('/business_posts/:id', function(request, response) {business_posts.show(request, response) })
+	// Edit
+	.get('/business_posts/:id/edit', function(request, response) {business_posts.edit(request, response) })
+	// Create
+	.post('/business_posts', function(request, response) {business_posts.create(request, response) })
+	// Destroy
+	.delete('/business_posts/:id', function(request, response) {business_posts.destroy(request, response) })
+	// Update
+	.patch('/business_posts/:id', function(request, response) {business_posts.update(request, response) })
+//Places_posts
+	// Index
+	.get('/places_posts', function(request, response) {places_posts.index(request, response) })
+	// New
+	.get('/places_posts/new', function(request, response) {places_posts.create(request, response) })
+	// Show
+	.get('/places_posts/:id', function(request, response) {places_posts.show(request, response) })
+	// Edit
+	.get('/places_posts/:id/edit', function(request, response) {places_posts.edit(request, response) })
+	// Create
+	.post('/places_posts', function(request, response) {places_posts.create(request, response) })
+	// Destroy
+	.delete('/places_posts/:id', function(request, response) {places_posts.destroy(request, response) })
+	// Update
+	.patch('/places_posts/:id', function(request, response) {places_posts.update(request, response) })
 //Contact
 	// Index
 	.get('/contacts', function(request, response) {contacts.index(request, response) })
