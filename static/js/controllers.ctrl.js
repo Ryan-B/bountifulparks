@@ -302,3 +302,40 @@ app.controller('EventtsController', function(EventtsFactory){
 		})
 	}
 })
+app.controller('GreeksController', function(GreeksFactory){
+	console.log("GreeksController Loaded");
+	var _this = this;
+	
+	var getGreeks = function(){
+		console.log("GreeksController getGreeks");
+		
+		GreeksFactory.getGreeks(function(greeks){
+			console.log(this);
+			console.log(greeks);
+			_this.greeks = greeks;
+		});
+	}
+	this.addGreek = function(newGreek){
+		console.log("Clicked", newGreek);
+		if(newGreek){
+			GreeksFactory.addGreek(newGreek, function(){
+				getGreeks();
+				_this.newGreek = {};
+			})
+		}
+	}
+	getGreeks();
+
+	this.removeGreek = function(greek){
+		console.log("removeGreek", greek);
+		GreeksFactory.removeGreek(greek, function(){
+			getGreeks();
+		})
+	}
+	this.updateGreek = function(greek){
+		console.log("updateGreek", greek);
+		GreeksFactory.updateGreek(greek, function(){
+			getGreeks();
+		})
+	}
+})

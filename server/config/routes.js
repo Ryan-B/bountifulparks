@@ -6,6 +6,7 @@ var business_posts = require('../controllers/business_posts.js');
 var places_posts = require('../controllers/places_posts.js');
 var schools = require('../controllers/schools.js');
 var eventts = require('../controllers/eventts.js');
+var greeks = require('../controllers/greeks.js');
 module.exports = function(app) {
 
 	app
@@ -70,6 +71,21 @@ module.exports = function(app) {
 	.delete('/eventts/:id', function(request, response) {eventts.destroy(request, response) })
 	// Update
 	.patch('/eventts/:id', function(request, response) {eventts.update(request, response) })
+//Greeks
+	// Index
+	.get('/greeks', function(request, response) {greeks.index(request, response) })
+	// New
+	.get('/greeks/new', function(request, response) {greeks.create(request, response) })
+	// Show
+	.get('/greeks/:id', function(request, response) {greeks.show(request, response) })
+	// Edit
+	.get('/greeks/:id/edit', function(request, response) {greeks.edit(request, response) })
+	// Create
+	.post('/greeks', function(request, response) {greeks.create(request, response) })
+	// Destroy
+	.delete('/greeks/:id', function(request, response) {greeks.destroy(request, response) })
+	// Update
+	.patch('/greeks/:id', function(request, response) {greeks.update(request, response) })
 //Business_Post
 	// Index
 	.get('/business_posts', function(request, response) {business_posts.index(request, response) })

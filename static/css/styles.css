@@ -1227,6 +1227,24 @@
 		margin-top: 0px;
 
 	}
+	#form2
+	{
+		/*width: 50%;*/
+		
+		/*border: 1px solid green;*/
+	}
+	.form2
+	{
+		width: 50%;
+		height: 30px;
+		font-size: 1em;
+	}
+	.form1
+	{
+		width: 30%;
+		height: 30px;
+		font-size: 1em;
+	}
 	input
 	{
 		width: 400px;
@@ -1249,10 +1267,10 @@
 		display: block;
 		float: right;
 		margin-right: 20%;
-		height: 50px;
-		width: 100px;
+		height: 40px;
+		width: 80px;
 		color: white;
-		font-size: 2em;
+		font-size: 1.5em;
 		background-color: black;
 	}
 	#celebrate_div

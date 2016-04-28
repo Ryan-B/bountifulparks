@@ -157,3 +157,26 @@ app.factory('EventtsFactory', function($http){
 		}
 	}
 })
+
+app.factory('GreeksFactory', function($http){
+	return {
+		getGreeks: function(callback){
+			console.log("GreeksFactory getGreeks");
+			$http.get('/greeks').success(function(response){
+				callback(response);
+			})
+		},
+		addGreek: function(newGreek, callback){
+			console.log("GreeksFactory addGreek");
+			$http.post('/greeks', newGreek).success(function(response){
+				callback();
+			})
+		},
+		removeGreek: function(greek, callback){
+			console.log("GreeksFactory RemoveGreek", greek);
+			$http.delete('/greeks/'+greek._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
