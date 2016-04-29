@@ -1,26 +1,26 @@
-var Greek = mongoose.model('Greek');
+var Karen = mongoose.model('Karen');
 
 module.exports = (function(){
 	return{
 		index: function(request, response){
-			console.log("Server / Ctrl / Greeks - Index")
-			Greek.find({}, function(err, greeks){
+			console.log("Server / Ctrl / Karens - Index")
+			Karen.find({}, function(err, karens){
 				if(err){
 					console.log(err);
 					response.json(err);
 				}
 				else{
-					console.log(greeks);
-					response.json(greeks);
+					console.log(karens);
+					response.json(karens);
 				}
 			})
 		},
 		create: function(request, response){
-			console.log('Server / Ctrl / Greeks - Create', request.body)
-			var greek = new Greek;
-			greek.user_name = request.body.user_name;
-			greek.comment = request.body.comment;
-			greek.save(function(err){
+			console.log('Server / Ctrl / Karens - Create', request.body)
+			var karen = new Karen;
+			karen.user_name = request.body.user_name;
+			karen.comment = request.body.comment;
+			karen.save(function(err){
 				if(err){
 					console.log(err);
 					response.json({status:"false"});
@@ -31,8 +31,8 @@ module.exports = (function(){
 			})
 		},
 		destroy: function(request, response){
-			console.log("Server / Ctrl / Greeks - destroy")
-			Greek.remove({_id:request.params.id}, function(err){
+			console.log("Server / Ctrl / Karens - destroy")
+			Karen.remove({_id:request.params.id}, function(err){
 				if(err){
 					console.log(err);
 					response.json({status:false});

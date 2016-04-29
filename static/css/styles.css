@@ -1353,5 +1353,25 @@
 		vertical-align: top;
 		margin-top: 10px;
 	}
+	#comment
+	{
+	
+		border-bottom: 1px solid darkgreen;
+		margin-top: 3%;
+	}
+	#comment_name
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: darkgreen;
+		border-top: 1px solid darkgreen;
+	}
+	#about_text9
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: darkgreen;
+		font-size: 1.75em;
+		text-align: center;
+	}
+
 
 }

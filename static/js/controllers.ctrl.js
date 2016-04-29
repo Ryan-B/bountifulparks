@@ -7,6 +7,7 @@ app.controller('MapsController', function(){
 
 })
 
+
 app.controller('HomeController', function($interval, $scope) {
 
 	console.log("HomeController Loaded")
@@ -336,6 +337,120 @@ app.controller('GreeksController', function(GreeksFactory){
 		console.log("updateGreek", greek);
 		GreeksFactory.updateGreek(greek, function(){
 			getGreeks();
+		})
+	}
+})
+
+app.controller('KarensController', function(KarensFactory){
+	console.log("KarensController Loaded");
+	var _this = this;
+	
+	var getKarens = function(){
+		console.log("KarensController getKarens");
+		
+		KarensFactory.getKarens(function(karens){
+			console.log(this);
+			console.log(karens);
+			_this.karens = karens;
+		});
+	}
+	this.addKaren = function(newKaren){
+		console.log("Clicked", newKaren);
+		if(newKaren){
+			KarensFactory.addKaren(newKaren, function(){
+				getKarens();
+				_this.newKaren = {};
+			})
+		}
+	}
+	getKarens();
+
+	this.removeKaren = function(karen){
+		console.log("removeKaren", karen);
+		KarensFactory.removeKaren(karen, function(){
+			getKarens();
+		})
+	}
+	this.updateKaren = function(karen){
+		console.log("updateKaren", karen);
+		KarensFactory.updateKaren(karen, function(){
+			getKarens();
+		})
+	}
+})
+
+app.controller('PlacesController', function(PlacesFactory){
+	console.log("PlacesController Loaded");
+	var _this = this;
+	
+	var getPlaces = function(){
+		console.log("PlacesController getPlaces");
+		
+		PlacesFactory.getPlaces(function(places){
+			console.log(this);
+			console.log(places);
+			_this.places = places;
+		});
+	}
+	this.addPlace = function(newPlace){
+		console.log("Clicked", newPlace);
+		if(newPlace){
+			PlacesFactory.addPlace(newPlace, function(){
+				getPlaces();
+				_this.newPlace = {};
+			})
+		}
+	}
+	getPlaces();
+
+	this.removePlace = function(place){
+		console.log("removePlace", place);
+		PlacesFactory.removePlace(place, function(){
+			getPlaces();
+		})
+	}
+	this.updatePlace = function(place){
+		console.log("updatePlace", place);
+		PlacesFactory.updatePlace(place, function(){
+			getPlaces();
+		})
+	}
+})
+
+app.controller('BalletsController', function(BalletsFactory){
+	console.log("BalletsController Loaded");
+	var _this = this;
+	
+	var getBallets = function(){
+		console.log("BalletsController getBallets");
+		
+		BalletsFactory.getBallets(function(ballet){
+			console.log(this);
+			console.log(ballet);
+			_this.ballet = ballet;
+		});
+	}
+	this.addBallet = function(newBallet){
+		console.log("Clicked", newBallet);
+		if(newBallet){
+			BalletsFactory.addBallet(newBallet, function(){
+				getBallets();
+				_this.newBallet = {};
+			})
+		}
+	}
+	getBallets();
+
+	this.removeBallet = function(ballet){
+		console.log("removeBallet", ballet);
+		BalletsFactory.removeBallet(ballet, function(){
+			getBallets();
+		})
+	}
+	this.updateBallet = function(ballet){
+		console.log("updateBallet", ballet);
+		BalletsFactory.updateBallet(ballet, function(){
+			getBallets();
 		})
 	}
 })

@@ -1,26 +1,26 @@
-var Greek = mongoose.model('Greek');
+var Ballet = mongoose.model('Ballet');
 
 module.exports = (function(){
 	return{
 		index: function(request, response){
-			console.log("Server / Ctrl / Greeks - Index")
-			Greek.find({}, function(err, greeks){
+			console.log("Server / Ctrl / Ballets - Index")
+			Ballet.find({}, function(err, ballets){
 				if(err){
 					console.log(err);
 					response.json(err);
 				}
 				else{
-					console.log(greeks);
-					response.json(greeks);
+					console.log(ballets);
+					response.json(ballets);
 				}
 			})
 		},
 		create: function(request, response){
-			console.log('Server / Ctrl / Greeks - Create', request.body)
-			var greek = new Greek;
-			greek.user_name = request.body.user_name;
-			greek.comment = request.body.comment;
-			greek.save(function(err){
+			console.log('Server / Ctrl / Ballet - Create', request.body)
+			var ballet = new Ballet;
+			ballet.user_name = request.body.user_name;
+			ballet.comment = request.body.comment;
+			ballet.save(function(err){
 				if(err){
 					console.log(err);
 					response.json({status:"false"});
@@ -31,8 +31,8 @@ module.exports = (function(){
 			})
 		},
 		destroy: function(request, response){
-			console.log("Server / Ctrl / Greeks - destroy")
-			Greek.remove({_id:request.params.id}, function(err){
+			console.log("Server / Ctrl / Ballets - destroy")
+			Ballet.remove({_id:request.params.id}, function(err){
 				if(err){
 					console.log(err);
 					response.json({status:false});

@@ -7,6 +7,9 @@ var places_posts = require('../controllers/places_posts.js');
 var schools = require('../controllers/schools.js');
 var eventts = require('../controllers/eventts.js');
 var greeks = require('../controllers/greeks.js');
+var karens = require('../controllers/karens.js');
+var places = require('../controllers/places.js');
+var ballets = require('../controllers/ballets.js');
 module.exports = function(app) {
 
 	app
@@ -36,7 +39,7 @@ module.exports = function(app) {
 	// Edit
 	.get('/products/:id/edit', function(request, response) {products.edit(request, response) })
 	// Create
-	.post('/products', function(request, response) {products.create(request, response) })
+	.post('/products', function(request, response) {console.log(request.body);products.create(request, response) })
 	// Destroy
 	.delete('/products/:id', function(request, response) {products.destroy(request, response) })
 	// Update
@@ -86,6 +89,51 @@ module.exports = function(app) {
 	.delete('/greeks/:id', function(request, response) {greeks.destroy(request, response) })
 	// Update
 	.patch('/greeks/:id', function(request, response) {greeks.update(request, response) })
+//Karens
+	// Index
+	.get('/karens', function(request, response) {karens.index(request, response) })
+	// New
+	.get('/karens/new', function(request, response) {karens.create(request, response) })
+	// Show
+	.get('/karens/:id', function(request, response) {karens.show(request, response) })
+	// Edit
+	.get('/karens/:id/edit', function(request, response) {karens.edit(request, response) })
+	// Create
+	.post('/karens', function(request, response) {karens.create(request, response) })
+	// Destroy
+	.delete('/karens/:id', function(request, response) {karens.destroy(request, response) })
+	// Update
+	.patch('/karens/:id', function(request, response) {karens.update(request, response) })
+//Places
+	// Index
+	.get('/places', function(request, response) {places.index(request, response) })
+	// New
+	.get('/places/new', function(request, response) {places.create(request, response) })
+	// Show
+	.get('/places/:id', function(request, response) {places.show(request, response) })
+	// Edit
+	.get('/places/:id/edit', function(request, response) {places.edit(request, response) })
+	// Create
+	.post('/places', function(request, response) {places.create(request, response) })
+	// Destroy
+	.delete('/places/:id', function(request, response) {places.destroy(request, response) })
+	// Update
+	.patch('/places/:id', function(request, response) {places.update(request, response) })
+//Ballets
+	// Index
+	.get('/ballets', function(request, response) {ballets.index(request, response) })
+	// New
+	.get('/ballets/new', function(request, response) {ballets.create(request, response) })
+	// Show
+	.get('/ballets/:id', function(request, response) {ballets.show(request, response) })
+	// Edit
+	.get('/ballets/:id/edit', function(request, response) {ballets.edit(request, response) })
+	// Create
+	.post('/ballets', function(request, response) {ballets.create(request, response) })
+	// Destroy
+	.delete('/ballets/:id', function(request, response) {ballets.destroy(request, response) })
+	// Update
+	.patch('/ballets/:id', function(request, response) {ballets.update(request, response) })
 //Business_Post
 	// Index
 	.get('/business_posts', function(request, response) {business_posts.index(request, response) })

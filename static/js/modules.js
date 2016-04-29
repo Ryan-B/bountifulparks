@@ -91,7 +91,7 @@ app.config(function($routeProvider){
 	.when('/schools', {
 		controller: 'SchoolsController',
 		controllerAs: 'schoolsCtrl',
-		templateUrl: '/partials/schools.partial.html'
+		templateUrl: '/partials/school.partial.html'
 	})
 	.when('/celebrate_eventts', {
 		controller: 'EventtsController',

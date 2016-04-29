@@ -25,14 +25,25 @@
 	<img id="about_img" src="/img/skedros4.jpg">
 </div> -->
 
-	<p id="about_text">Share your own memories and appreciation for Bountiful's Skedros Family, the Mandarin Restaurant, Mountain View Pharmacy, and the Skedros Scholarship funds by clicking CELEBRATE and writing a post or two of your own. Then share your thoughts with your own social network.</p>
+	<p id="about_text">Share your own memories and appreciation for Bountiful's Skedros Family, the Mandarin Restaurant, Mountain View Pharmacy, and the Skedros Scholarship funds by clicking CELEBRATE and writing a post or two of your own. Then share your thoughts with your own social network.</p><br><br>
+
+	<p id="about_text9">Comment on this Post</p>
+
 	
-	<div id="comment_div" ng-controller="GreeksController">
+	<div id="comment" ng-controller="GreeksController as greeksCtrl">
+		<div ng-repeat="greek in greeksCtrl.greeks">
+			<p id="comment_name">Commented by <span ng-bind="greek.user_name"></span></p>
+			<p id="about_text"><span ng-bind="greek.comment"></span></p>	
+			<button id="remove" ng-click="greeksCtrl.removeGreek(greek)">Remove</button>
+		</div>
+	</div>
+	
+	<div id="comment_div" ng-controller="GreeksController as greekCtrl">
 		<p id="dateline">Leave a comment</p>
 		<div id="form2">
-			<input class="form1" ng-model="GreeksController.newGreek.user_name" require placeholder="your name">
-			<textarea class="form2" ng-model="GreeksController.newGreek.message" require placeholder="comment"></textarea>
-			<button id= "reserve" ng-click="GreeksController.addGreek(GreeksController.newGreek)">Post</button>
+			<input class="form1" ng-model="greekCtrl.newGreek.user_name" require placeholder="your name">
+			<textarea class="form2" ng-model="greekCtrl.newGreek.comment" require placeholder="comment"></textarea>
+			<button id= "reserve" ng-click="greekCtrl.addGreek(greekCtrl.newGreek)">Post</button>
 		</div>
 	</div>
 </div>
@@ -45,7 +56,26 @@
 	<img id="about_img3" src="/img/slideshow/12.jpg">
 </div>
 <div id="about_div2">
-	<p id="about_text">Living my life Bountifully involves family, church, friends, and community. I love going to the market on a Saturday evening and seeing friends that we have met all over our little town. Even though Bountiful is part of a very large county, sits on a busy corridor along I-15 on the Wasatch front, and is 15 minutes away from the hustle and bustle of Salt Lake City, Bountiful retains a small town feel. It centers on community.<br><br>Spring brings people out of hibernation, and as you drive down the streets, you stop every few minutes visiting with old friends. You don't have to live in Bountiful for a lifetime to know all your neighbors in a five block radius. Walking on Bountiful Boulevard is a hit in our community as well.<br><br> Summer brings quite a lot of lemonade stands hosted by future generations of Bountifulites. You see, people don't always leave Bountiful. Once you've had a taste of this cozy little town, you never want to leave. People usually leave for jobs or education.<br><br>A favorite of summer is our local Farmers Market. On Thursday afternoons people bring out their produce and crafts, along with the food trucks. I love heading out to this market for great food and crafts, and revisiting with old friends.<br><br>Fall brings a return to school and Friday night football games. Friends and family, usually alumni, pack the stands at these games. Bountiful has two great high schools: Bountiful and Viewmont High Schools. Along with our close neighbor, Woods Cross High, there are plenty of games and the rivalries are alive and well. Look closely at the "B" up on the mountain, and you might see it lit up on a Friday night. Speaking of schools, our little community has the best schools. I might be biased, but our educators rock! I feel justified in my statement as my kids have gone to school in five different cities.<br><br>The capstone of our little town is the LDS Temple. Whenever we are driving home from a long vacation, or flying into the Salt Lake City airport, when we see the Temple, we know we are home. My husband and I have talked for many years of retiring somewhere warmer, we get a lot of snow, but as the years have come and gone, we've become like the beautiful trees in this area. We are deeply rooted in the community and are part of a very large grove of friends. We have loved raising our children here and making great friends along the way.<br><br>Share your own memories and appreciation for Bountiful's Spring evening drives, small town charm,or anything else by clicking CELEBRATE and writing a post or two of your own. Then share your thoughts with your own social network.</p>
+	<p id="about_text">Living my life Bountifully involves family, church, friends, and community. I love going to the market on a Saturday evening and seeing friends that we have met all over our little town. Even though Bountiful is part of a very large county, sits on a busy corridor along I-15 on the Wasatch front, and is 15 minutes away from the hustle and bustle of Salt Lake City, Bountiful retains a small town feel. It centers on community.<br><br>Spring brings people out of hibernation, and as you drive down the streets, you stop every few minutes visiting with old friends. You don't have to live in Bountiful for a lifetime to know all your neighbors in a five block radius. Walking on Bountiful Boulevard is a hit in our community as well.<br><br> Summer brings quite a lot of lemonade stands hosted by future generations of Bountifulites. You see, people don't always leave Bountiful. Once you've had a taste of this cozy little town, you never want to leave. People usually leave for jobs or education. A favorite of summer is our local Farmers Market. On Thursday afternoons people bring out their produce and crafts, along with the food trucks. I love heading out to this market for great food and crafts, and revisiting with old friends.<br><br>Fall brings a return to school and Friday night football games. Friends and family, usually alumni, pack the stands at these games. Bountiful has two great high schools: Bountiful and Viewmont High Schools. Along with our close neighbor, Woods Cross High, there are plenty of games and the rivalries are alive and well. Look closely at the "B" up on the mountain, and you might see it lit up on a Friday night. Speaking of schools, our little community has the best schools. I might be biased, but our educators rock! I feel justified in my statement as my kids have gone to school in five different cities.<br><br>The capstone of our little town is the LDS Temple. Whenever we are driving home from a long vacation, or flying into the Salt Lake City airport, when we see the Temple, we know we are home. My husband and I have talked for many years of retiring somewhere warmer, we get a lot of snow, but as the years have come and gone, we've become like the beautiful trees in this area. We are deeply rooted in the community and are part of a very large grove of friends. We have loved raising our children here and making great friends along the way.<br><br>Share your own memories and appreciation for Bountiful's Spring evening drives, small town charm,or anything else by clicking CELEBRATE and writing a post or two of your own. Then share your thoughts with your own social network.</p><br><br>
+	<p id="about_text9">Comment on this Post</p>
+
+	
+	<div id="comment" ng-controller="KarensController as karensCtrl">
+		<div ng-repeat="karen in karensCtrl.karens">
+			<p id="comment_name">Commented by <span ng-bind="karen.user_name"></span></p>
+			<p id="about_text"><span ng-bind="karen.comment"></span></p>	
+			<button id="remove" ng-click="karensCtrl.removeKaren(karen)">Remove</button>
+		</div>
+	</div>
+	
+	<div id="comment_div" ng-controller="KarensController as karenCtrl">
+		<p id="dateline">Leave a comment</p>
+		<div id="form2">
+			<input class="form1" ng-model="karenCtrl.newKaren.user_name" require placeholder="your name">
+			<textarea class="form2" ng-model="karenCtrl.newKaren.comment" require placeholder="comment"></textarea>
+			<button id= "reserve" ng-click="karenCtrl.addKaren(karenCtrl.newKaren)">Post</button>
+		</div>
+	</div>
 </div>
 
 <div ng-repeat="product in productsCtrl.products">

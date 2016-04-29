@@ -10,7 +10,26 @@
 </div>
 <div id="about_div2">
 	
-	<p id="about_text">The Bountiful City Council anticipated some level of opposition to a local developer's recent request for endorsement of a proposed public/private landswap. So they called for a public hearing to gauge community response to the idea. What they didn't anticipate was the formation of a determined neighborhood coalition called Twin Hollows United.<br><br>United indeed, in their opposition to development of the 156 acres of Forest Service property that has kept the hills above their homes open for hiking, horseback riding, and sunset watching for generations. The group did more than pack a record number of people into City Hall to speak against the proposal. They sent hundreds of well reasoned e-mails to City Officials, ignited followings on social media, organized themselves into various committees to find experts to back up their claims and verify their concerns. They even organized a neighborhood party to draw attention to the tremendous benefit of easy access to open space for Bountiful families.<br><br>Best of all, they provided a catalyst to bring a neighborhood together in defense of a vital public resource for Our Bountiful Community. The net effect of which was a letter of opposition from the City Council to the Forest Service in Washington D.C. and a commitment for review of open space policy by Bountiful officials...JSP<br><br>Please post your own comments about Open Space in Bountiful at CELEBRATE Bountiful Places. Then please share it on your own networks.<br><br>Disclosure: John Pitt, the contributor of this article is a member of the Bountiful City Council. This article and all others by him on this site reflect his personal opinions about Bountiful issues and do not necessarily represent the official positions of other Bountiful City officials or its employees.</p>
+	<p id="about_text">The Bountiful City Council anticipated some level of opposition to a local developer's recent request for endorsement of a proposed public/private landswap. So they called for a public hearing to gauge community response to the idea. What they didn't anticipate was the formation of a determined neighborhood coalition called Twin Hollows United.<br><br>United indeed, in their opposition to development of the 156 acres of Forest Service property that has kept the hills above their homes open for hiking, horseback riding, and sunset watching for generations. The group did more than pack a record number of people into City Hall to speak against the proposal. They sent hundreds of well reasoned e-mails to City Officials, ignited followings on social media, organized themselves into various committees to find experts to back up their claims and verify their concerns. They even organized a neighborhood party to draw attention to the tremendous benefit of easy access to open space for Bountiful families.<br><br>Best of all, they provided a catalyst to bring a neighborhood together in defense of a vital public resource for Our Bountiful Community. The net effect of which was a letter of opposition from the City Council to the Forest Service in Washington D.C. and a commitment for review of open space policy by Bountiful officials...JSP<br><br>Please post your own comments about Open Space in Bountiful at CELEBRATE Bountiful Places. Then please share it on your own networks.<br><br>Disclosure: John Pitt, the contributor of this article is a member of the Bountiful City Council. This article and all others by him on this site reflect his personal opinions about Bountiful issues and do not necessarily represent the official positions of other Bountiful City officials or its employees.</p><br><br>
+	<p id="about_text9">Comment on this Post</p>
+
+	
+	<div id="comment" ng-controller="PlacesController as placesCtrl">
+		<div ng-repeat="place in placesCtrl.places">
+			<p id="comment_name">Commented by <span ng-bind="place.user_name"></span></p>
+			<p id="about_text"><span ng-bind="place.comment"></span></p>	
+			<button id="remove" ng-click="placesCtrl.removePlace(place)">Remove</button>
+		</div>
+	</div>
+	
+	<div id="comment_div" ng-controller="PlacesController as placeCtrl">
+		<p id="dateline">Leave a comment</p>
+		<div id="form2">
+			<input class="form1" ng-model="placeCtrl.newPlace.user_name" require placeholder="your name">
+			<textarea class="form2" ng-model="placeCtrl.newPlace.comment" require placeholder="comment"></textarea>
+			<button id= "reserve" ng-click="placeCtrl.addPlace(placeCtrl.newPlace)">Post</button>
+		</div>
+	</div>
 </div>
 
 <div ng-repeat="places_post in places_postsCtrl.places_posts">

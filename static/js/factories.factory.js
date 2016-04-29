@@ -180,3 +180,72 @@ app.factory('GreeksFactory', function($http){
 		}
 	}
 })
+app.factory('KarensFactory', function($http){
+	return {
+		getKarens: function(callback){
+			console.log("KarensFactory getKarens");
+			$http.get('/karens').success(function(response){
+				callback(response);
+			})
+		},
+		addKaren: function(newKaren, callback){
+			console.log("KarensFactory addKaren");
+			$http.post('/karens', newKaren).success(function(response){
+				callback();
+			})
+		},
+		removeKaren: function(karen, callback){
+			console.log("KarensFactory RemoveKaren", karen);
+			$http.delete('/karens/'+karen._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+
+app.factory('PlacesFactory', function($http){
+	return {
+		getPlaces: function(callback){
+			console.log("PlacesFactory getPlaces");
+			$http.get('/places').success(function(response){
+				callback(response);
+			})
+		},
+		addPlace: function(newPlace, callback){
+			console.log("PlacesFactory addPlace");
+			$http.post('/places', newPlace).success(function(response){
+				callback();
+			})
+		},
+		removePlace: function(place, callback){
+			console.log("PlacesFactory RemovePlace", place);
+			$http.delete('/places/'+place._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+
+app.factory('BalletsFactory', function($http){
+	return {
+		getBallets: function(callback){
+			console.log("BalletsFactory getBallets");
+			$http.get('/ballets').success(function(response){
+				callback(response);
+			})
+		},
+		addBallet: function(newBallet, callback){
+			console.log("BalletsFactory addBallet");
+			$http.post('/ballets', newBallet).success(function(response){
+				callback();
+			})
+		},
+		removeBallet: function(ballet, callback){
+			console.log("BalletsFactory RemoveBallet", ballet);
+			$http.delete('/ballets/'+ballet._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
+
