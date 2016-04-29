@@ -248,4 +248,26 @@ app.factory('BalletsFactory', function($http){
 		}
 	}
 })
+app.factory('JazzsFactory', function($http){
+	return {
+		getJazzs: function(callback){
+			console.log("JazzsFactory getJazzs");
+			$http.get('/jazzs').success(function(response){
+				callback(response);
+			})
+		},
+		addJazz: function(newJazz, callback){
+			console.log("JazzsFactory addJazz");
+			$http.post('/jazzs', newJazz).success(function(response){
+				callback();
+			})
+		},
+		removeJazz: function(jazz, callback){
+			console.log("JazzsFactory RemoveJazz", jazz);
+			$http.delete('/jazzs/'+jazz._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
 

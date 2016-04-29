@@ -454,3 +454,42 @@ app.controller('BalletsController', function(BalletsFactory){
 		})
 	}
 })
+
+app.controller('JazzsController', function(JazzsFactory){
+	console.log("JazzsController Loaded");
+	var _this = this;
+	
+	var getJazzs = function(){
+		console.log("JazzsController getJazzs");
+		
+		JazzsFactory.getJazzs(function(jazz){
+			console.log(this);
+			console.log(jazz);
+			_this.jazz = jazz;
+		});
+	}
+	this.addJazz = function(newJazz){
+		console.log("Clicked", newJazz);
+		if(newJazz){
+			JazzsFactory.addJazz(newJazz, function(){
+				getJazzs();
+				_this.newJazz = {};
+			})
+		}
+	}
+	getJazzs();
+
+	this.removeJazz = function(jazz){
+		console.log("removeJazz", jazz);
+		JazzsFactory.removeJazz(jazz, function(){
+			getJazzs();
+		})
+	}
+	this.updateJazz = function(jazz){
+		console.log("updateJazz", jazz);
+		JazzsFactory.updateJazz(jazz, function(){
+			getJazzs();
+		})
+	}
+})
+

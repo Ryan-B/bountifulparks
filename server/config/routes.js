@@ -9,6 +9,7 @@ var eventts = require('../controllers/eventts.js');
 var greeks = require('../controllers/greeks.js');
 var karens = require('../controllers/karens.js');
 var places = require('../controllers/places.js');
+var jazzs = require('../controllers/jazzs.js');
 var ballets = require('../controllers/ballets.js');
 module.exports = function(app) {
 
@@ -134,6 +135,21 @@ module.exports = function(app) {
 	.delete('/ballets/:id', function(request, response) {ballets.destroy(request, response) })
 	// Update
 	.patch('/ballets/:id', function(request, response) {ballets.update(request, response) })
+//Jazzs
+	// Index
+	.get('/jazzs', function(request, response) {jazzs.index(request, response) })
+	// New
+	.get('/jazzs/new', function(request, response) {jazzs.create(request, response) })
+	// Show
+	.get('/jazzs/:id', function(request, response) {jazzs.show(request, response) })
+	// Edit
+	.get('/jazzs/:id/edit', function(request, response) {jazzs.edit(request, response) })
+	// Create
+	.post('/jazzs', function(request, response) {jazzs.create(request, response) })
+	// Destroy
+	.delete('/jazzs/:id', function(request, response) {jazzs.destroy(request, response) })
+	// Update
+	.patch('/jazzs/:id', function(request, response) {jazzs.update(request, response) })
 //Business_Post
 	// Index
 	.get('/business_posts', function(request, response) {business_posts.index(request, response) })
