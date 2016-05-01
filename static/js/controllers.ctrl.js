@@ -493,3 +493,40 @@ app.controller('JazzsController', function(JazzsFactory){
 	}
 })
 
+app.controller('WhatsController', function(WhatsFactory){
+	console.log("WhatsController Loaded");
+	var _this = this;
+	
+	var getWhats = function(){
+		console.log("WhatsController getWhats");
+		
+		WhatsFactory.getWhats(function(what){
+			console.log(this);
+			console.log(what);
+			_this.what = what;
+		});
+	}
+	this.addWhat = function(newWhat){
+		console.log("Clicked", newWhat);
+		if(newWhat){
+			WhatsFactory.addWhat(newWhat, function(){
+				getWhats();
+				_this.newWhat = {};
+			})
+		}
+	}
+	getWhats();
+
+	this.removeWhat = function(what){
+		console.log("removeWhat", what);
+		WhatsFactory.removeWhat(what, function(){
+			getWhats();
+		})
+	}
+	this.updateWhat = function(what){
+		console.log("updateWhat", what);
+		WhatsFactory.updateWhat(what, function(){
+			getWhats();
+		})
+	}
+})

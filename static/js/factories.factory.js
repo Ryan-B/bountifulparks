@@ -270,4 +270,25 @@ app.factory('JazzsFactory', function($http){
 		}
 	}
 })
-
+app.factory('WhatsFactory', function($http){
+	return {
+		getWhats: function(callback){
+			console.log("WhatsFactory getWhats");
+			$http.get('/whats').success(function(response){
+				callback(response);
+			})
+		},
+		addWhat: function(newWhat, callback){
+			console.log("WhatsFactory addWhat");
+			$http.post('/whats', newWhat).success(function(response){
+				callback();
+			})
+		},
+		removeWhat: function(what, callback){
+			console.log("WhatsFactory RemoveWhat", what);
+			$http.delete('/whats/'+what._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})

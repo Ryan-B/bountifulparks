@@ -103,6 +103,11 @@ app.config(function($routeProvider){
 		controllerAs: 'eventtsCtrl',
 		templateUrl: '/partials/eventts.partial.html'
 	})
+	.when('/what_mean', {
+		controller: 'WhatsController',
+		controllerAs: 'whatsCtrl',
+		templateUrl: '/partials/what_mean.partial.html'
+	})
 	
 
 });

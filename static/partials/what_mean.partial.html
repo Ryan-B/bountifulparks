@@ -1,0 +1,41 @@
+<h1 id="what">What does <span id="green"><b>BOUNTIFUL</b></span> mean to you?</h1>
+
+<div ng-controller="WhatsController as whatsCtrl">
+		<div id="comment_what" ng-repeat="what in whatsCtrl.what">
+			<p id="comment_name2"><i><span ng-bind="what.user_name"></span> says,</i></p>
+			<p id="comment_comment">"<span ng-bind="what.comment"></span>"</p>	
+			<button id="remove" ng-click="whatsCtrl.removeWhat(what)">Remove</button>
+		</div>
+</div>
+
+<div id="form">
+		<input ng-model="whatsCtrl.newWhat.user_name" require placeholder="user name">
+		<!-- <input ng-model="productsCtrl.newProduct.title" require placeholder="headline"> -->
+		<textarea ng-model="whatsCtrl.newWhat.comment" require placeholder="What does BOUNTIFUL mean to me?"></textarea>
+		<a href="#/what_mean"><button id= "reserve" ng-click="whatsCtrl.addWhat(whatsCtrl.newWhat)">Post</button></a>
+</div>
+
+<div id="bottom_section3">
+			<div id="contact_div">
+				<div id="contact2">
+					<p id="our_p5">Email Us:</p>
+					<p id="our_p3">ourbountifultown@gmail.com</p><br>
+				</div>
+				<div id="contact2">
+					<p id="our_p5">Follow Us:</p>
+					<img class="twitter" id="logo" src="img/twitter.png">
+					<img id="logo" src="img/facebook.jpg">
+					<img id="logo" src="img/google.png">
+					<img id="logo" src="img/youtube.png">
+					<img id="logo" src="img/pinterest.png">
+					<img id="logo" src="img/instagram.png">
+				</div>
+				<div id="contact2">
+					<p id="our_p5">Write Us:</p>
+					<p id="our_p3">P.O. Box 706, Bountiful, UT 84010</p><br>
+				</div>
+			</div>
+		</div>
+<style type="text/css">
+	
+</style>

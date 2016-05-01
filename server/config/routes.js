@@ -11,6 +11,7 @@ var karens = require('../controllers/karens.js');
 var places = require('../controllers/places.js');
 var jazzs = require('../controllers/jazzs.js');
 var ballets = require('../controllers/ballets.js');
+var whats = require('../controllers/whats.js');
 module.exports = function(app) {
 
 	app
@@ -135,6 +136,21 @@ module.exports = function(app) {
 	.delete('/ballets/:id', function(request, response) {ballets.destroy(request, response) })
 	// Update
 	.patch('/ballets/:id', function(request, response) {ballets.update(request, response) })
+//Whats
+	// Index
+	.get('/whats', function(request, response) {whats.index(request, response) })
+	// New
+	.get('/whats/new', function(request, response) {whats.create(request, response) })
+	// Show
+	.get('/whats/:id', function(request, response) {whats.show(request, response) })
+	// Edit
+	.get('/whats/:id/edit', function(request, response) {whats.edit(request, response) })
+	// Create
+	.post('/whats', function(request, response) {whats.create(request, response) })
+	// Destroy
+	.delete('/whats/:id', function(request, response) {whats.destroy(request, response) })
+	// Update
+	.patch('/whats/:id', function(request, response) {whats.update(request, response) })
 //Jazzs
 	// Index
 	.get('/jazzs', function(request, response) {jazzs.index(request, response) })
