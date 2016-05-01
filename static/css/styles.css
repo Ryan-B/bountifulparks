@@ -1077,7 +1077,15 @@
 		display: inline-block;
 		vertical-align: top;
 		/*margin-top: 1.25%;*/
-		margin-left: 9.65%;
+		margin: 0 0 0 9.65%;
+	}
+	#about_div123
+	{
+		width: 25%;
+		display: inline;
+		vertical-align: top;
+		/*margin-top: 1.25%;*/
+		margin: 0 0 0 0;
 	}
 	#about_div15
 	{
@@ -1092,7 +1100,7 @@
 		width: 25%;
 		display: inline-block;
 		vertical-align: top;
-		margin-left: 9.65%;
+		margin-left: 0;
 		/*margin-top: 4%;*/
 		/*margin-left: 15%;*/
 	}
@@ -1552,15 +1560,16 @@
 	{
 		display: inline-block;
 		width: 30%;
-		margin-left: 1%;
-		margin-top: 3%;
+		margin-left: 1.25%;
+		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	#prem_title
 	{
 		font-family: 'Open Sans', sans-serif;
 		color: darkgreen;
 		font-size: 1.5em;
-		margin-left: 19.5%;
+		margin-left: 13%;
 		display: inline;
 	}
 	.prem_top
@@ -1574,6 +1583,24 @@
 		font-size: 1.75em;
 		text-align: center;
 		margin-bottom: 5%;
+	}
+	#person_title10
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: green;
+		font-size: 2.25em;
+		margin-left: 9%;
+		/*margin-right: 7.5%;*/
+		/*text-align: center;*/
+		/*margin-bottom: 5%;*/
+	}
+	#person_title11
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: green;
+		font-size: 1.5em;
+		margin-top: 2%;
+		
 	}
 
 }
