@@ -530,3 +530,42 @@ app.controller('WhatsController', function(WhatsFactory){
 		})
 	}
 })
+
+app.controller('ConcertsController', function(ConcertsFactory){
+	console.log("ConcertsController Loaded");
+	var _this = this;
+	
+	var getConcerts = function(){
+		console.log("ConcertsController getConcerts");
+		
+		ConcertsFactory.getConcerts(function(concerts){
+			console.log(this);
+			console.log(concerts);
+			_this.concerts = concerts;
+		});
+	}
+	this.addConcert = function(newConcert){
+		console.log("Clicked", newConcert);
+		if(newConcert){
+			ConcertsFactory.addConcert(newConcert, function(){
+				getConcerts();
+				_this.newConcert = {};
+			})
+		}
+	}
+	getConcerts();
+
+	this.removeConcert = function(concert){
+		console.log("removeConcert", concert);
+		ConcertsFactory.removeConcert(concert, function(){
+			getConcerts();
+		})
+	}
+	this.updateConcert = function(concert){
+		console.log("updateConcert", concert);
+		ConcertsFactory.updateConcert(concert, function(){
+			getConcerts();
+		})
+	}
+})
+

@@ -292,3 +292,26 @@ app.factory('WhatsFactory', function($http){
 		}
 	}
 })
+
+app.factory('ConcertsFactory', function($http){
+	return {
+		getConcerts: function(callback){
+			console.log("ConcertsFactory getConcerts");
+			$http.get('/concerts').success(function(response){
+				callback(response);
+			})
+		},
+		addConcert: function(newConcert, callback){
+			console.log("ConcertsFactory addConcert");
+			$http.post('/concerts', newConcert).success(function(response){
+				callback();
+			})
+		},
+		removeConcert: function(concert, callback){
+			console.log("ConcertsFactory RemoveConcert", concert);
+			$http.delete('/concerts/'+concert._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})

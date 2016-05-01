@@ -20,8 +20,25 @@
 <p id="about_text">Bountiful Davis Art Center</p>
 <p id="about_text">90 N Main Street</p>
 <p id="about_text">Bountiful, UT 84010</p></b>
-</div>
+<p id="about_text9">Comment on this Post</p>
 
+	<div id="comment" ng-controller="ConcertsController as concertsCtrl">
+		<div ng-repeat="concert in concertsCtrl.concerts">
+			<p id="comment_name">Commented by <span ng-bind="concert.user_name"></span></p>
+			<p id="about_text"><span ng-bind="concert.comment"></span></p>	
+			<button id="remove" ng-click="concertsCtrl.removeConcert(concert)">Remove</button>
+		</div>
+	</div>
+	
+	<div id="comment_div" ng-controller="ConcertsController as concertCtrl">
+		<p id="dateline">Leave a comment</p>
+		<div id="form2">
+			<input class="form1" ng-model="concertCtrl.newConcert.user_name" require placeholder="your name">
+			<textarea class="form2" ng-model="concertCtrl.newConcert.comment" require placeholder="comment"></textarea>
+			<button id= "reserve" ng-click="concertCtrl.addConcert(concertCtrl.newConcert)">Post</button>
+		</div>
+	</div>
+</div>	
 
 
 <div ng-repeat="eventt in eventtsCtrl.eventts">
@@ -36,7 +53,7 @@
 			<p id="about_text" ng-bind="eventt.message"></p>
 			<button id="remove" ng-click="eventtsCtrl.removeEventt(eventt)">Remove</button>
 		</div>
-	</div>
+</div>
 
 
 

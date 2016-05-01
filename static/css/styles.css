@@ -6,6 +6,10 @@
 		padding: 0;
 		
 	}
+	#remove
+	{
+		visibility: hidden;
+	}
 	
 	#main_wrapper
 	{
@@ -1705,6 +1709,10 @@
 		width: 76%;
 		margin: auto;
 		margin-bottom: 3%;
+	}
+	#remove
+	{
+		/*visibility: hidden;*/
 	}
 
 }

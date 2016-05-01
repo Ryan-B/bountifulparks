@@ -12,6 +12,7 @@ var places = require('../controllers/places.js');
 var jazzs = require('../controllers/jazzs.js');
 var ballets = require('../controllers/ballets.js');
 var whats = require('../controllers/whats.js');
+var concerts = require('../controllers/concerts.js');
 module.exports = function(app) {
 
 	app
@@ -151,6 +152,21 @@ module.exports = function(app) {
 	.delete('/whats/:id', function(request, response) {whats.destroy(request, response) })
 	// Update
 	.patch('/whats/:id', function(request, response) {whats.update(request, response) })
+//Concerts
+	// Index
+	.get('/concerts', function(request, response) {concerts.index(request, response) })
+	// New
+	.get('/concerts/new', function(request, response) {concerts.create(request, response) })
+	// Show
+	.get('/concerts/:id', function(request, response) {concerts.show(request, response) })
+	// Edit
+	.get('/concerts/:id/edit', function(request, response) {concerts.edit(request, response) })
+	// Create
+	.post('/concerts', function(request, response) {concerts.create(request, response) })
+	// Destroy
+	.delete('/concerts/:id', function(request, response) {concerts.destroy(request, response) })
+	// Update
+	.patch('/concerts/:id', function(request, response) {concerts.update(request, response) })
 //Jazzs
 	// Index
 	.get('/jazzs', function(request, response) {jazzs.index(request, response) })
