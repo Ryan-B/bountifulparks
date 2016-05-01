@@ -1,13 +1,29 @@
-<h1 id="what">What does <span id="green"><b>BOUNTIFUL</b></span> mean to you?</h1>
+<div id="define">
+	<p id="person_title23">Webster defines Bountiful like this:</p>
+	<p id="person_title24">boun·ti·ful - ˈboun(t)əfəl</p>
+	<p id="person_title24">adjective: giving or providing many desired things</p> 
+</div>
+<div id="about_div1">
+	<img id="about_img3" src="/img/define1.jpg">
+</div>
+<div id="about_div2">
+	<p id="about_text">Not a bad aspiration for a town or an outlook on life. As a life-long advocate for acheiving both, I've posted some of my own definations of Bountiful and/or bountiful below. I hope that you will take a few moments to do the same.<br><br>Why? Because what qualifies as bountiful to you, ordinary as it may seem, will likely offer hope and inspiration to somebody else who is having a difficult time finding the bounty in their own life.<br><br>When you've had time to collect some thoughts of your own, please Click here to enter your definition(s) and picture(s). They will appear in the Premier edition of Our Bountiful Town and its affiliatied social media sites.<br><br>Consider this an easy introduction to discovering, celebrating, and supporting Our Bountiful Town.com</p>
+</div>
 
 <div ng-controller="WhatsController as whatsCtrl">
-		<div id="comment_what" ng-repeat="what in whatsCtrl.what">
+	<div ng-repeat="what in whatsCtrl.what">
+		<div id="greenline3"></div>
+		<div id="about_div1">
+			<img id="about_img3" src="/img/art.png">
+		</div>
+		<div id="about_div2">
 			<p id="comment_name2"><i><span ng-bind="what.user_name"></span> says,</i></p>
 			<p id="comment_comment">"<span ng-bind="what.comment"></span>"</p>	
 			<button id="remove" ng-click="whatsCtrl.removeWhat(what)">Remove</button>
 		</div>
+	</div>
 </div>
-
+<div id="greenline3"></div>
 <div id="form">
 		<input ng-model="whatsCtrl.newWhat.user_name" require placeholder="user name">
 		<!-- <input ng-model="productsCtrl.newProduct.title" require placeholder="headline"> -->
