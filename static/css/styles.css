@@ -1076,7 +1076,7 @@
 		width: 25%;
 		display: inline-block;
 		vertical-align: top;
-		margin-top: 1.25%;
+		/*margin-top: 1.25%;*/
 		margin-left: 9.65%;
 	}
 	#about_div15
@@ -1101,7 +1101,7 @@
 		width: 45%;
 		display: inline-block;
 		margin-left: 7.5%;
-		margin-top: 3%;
+		/*margin-top: 3%;*/
 
 	}
 	#fact_div
@@ -1560,8 +1560,20 @@
 		font-family: 'Open Sans', sans-serif;
 		color: darkgreen;
 		font-size: 1.5em;
-		text-align: center;
+		margin-left: 19.5%;
+		display: inline;
 	}
-
+	.prem_top
+	{
+		margin-top: 5%;
+	}
+	#person_title2
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: green;
+		font-size: 1.75em;
+		text-align: center;
+		margin-bottom: 5%;
+	}
 
 }
