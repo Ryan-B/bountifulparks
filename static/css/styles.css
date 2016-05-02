@@ -899,6 +899,19 @@
 		margin-top: 40px;
 		visibility: visible;
 	}
+	#vogel
+	{
+		font-size: 1.5em;
+		text-align: center;
+		/*border-top: 2px solid grey;*/
+		display: block;
+		width: 33.3%;
+		font-family: "Alef";
+		margin: auto;
+		margin-bottom: 2%;
+		padding-top: 2%;
+		color: darkslateblue;
+	}
 }
 
 @media screen and (min-width: 1024px){
