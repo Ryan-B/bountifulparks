@@ -919,14 +919,14 @@
 	}
 	.form2
 	{
-		width: 50%;
-		height: 90px;
+		width: 80%;
+		height: 120px;
 		font-size: 3em;
 	}
 	.form1
 	{
-		width: 30%;
-		height: 30px;
+		width: 50%;
+		height: 60px;
 		font-size: 3em;
 	}
 }
