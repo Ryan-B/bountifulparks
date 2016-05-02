@@ -762,6 +762,7 @@
     	display: inline-block;
     	margin-left: 0px;
     	visibility: visible;
+    	box-shadow: none;
     }
     #green_circle2
     {
