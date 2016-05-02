@@ -20,7 +20,7 @@ Bountiful, UT 84010</b></p><br>
 	<div id="comment" ng-controller="ConcertsController as concertsCtrl">
 		<div ng-repeat="concert in concertsCtrl.concerts">
 			<p id="comment_name">Commented by <span ng-bind="concert.user_name"></span></p>
-			<p id="about_text"><span ng-bind="concert.comment"></span></p>	
+			<p id="comment_name2"><span ng-bind="concert.comment"></span></p>	
 			<button id="remove" ng-click="concertsCtrl.removeConcert(concert)">Remove</button>
 		</div>
 	</div>

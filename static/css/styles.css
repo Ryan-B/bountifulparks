@@ -823,6 +823,12 @@
 		color: darkgreen;
 		border-top: 1px solid darkgreen;
 	}
+	#comment_name2
+	{
+		font-family: 'Open Sans', sans-serif;
+		color: seagreen;
+		/*border-top: 1px solid darkgreen;*/
+	}
 	#img_div7
 	{
 		width: 50%;
