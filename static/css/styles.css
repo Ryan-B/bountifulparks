@@ -922,12 +922,14 @@
 		width: 80%;
 		height: 120px;
 		font-size: 3em;
+		font-family: 'Open Sans', sans-serif;
 	}
 	.form1
 	{
 		width: 50%;
 		height: 60px;
 		font-size: 3em;
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 
