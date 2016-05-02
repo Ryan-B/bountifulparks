@@ -901,11 +901,11 @@
 	}
 	#vogel
 	{
-		font-size: 2em;
+		font-size: 1.75em;
 		text-align: center;
 		/*border-top: 2px solid grey;*/
 		display: block;
-		width: 33.3%;
+		width: 100%;
 		font-family: "Alef";
 		margin: auto;
 		margin-bottom: 2%;
