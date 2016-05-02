@@ -612,6 +612,14 @@
 		color: darkgreen;
 		margin-top: 0;
 	}
+	#person_title42
+	{
+		font-size: 2em;
+		text-align: center;
+		font-family: 'Alef', sans-serif;
+		color: darkslateblue;
+		margin-top: 0;
+	}
 	#dateline
 	{
 		font-size: .75em;
