@@ -220,11 +220,11 @@
 	}
 	#vogel2
 	{
-		font-size: 25pt;
+		font-size: 200%;
 		text-align: center;
 		/*border-top: 2px solid grey;*/
 		display: block;
-		width: 33.3%;
+		width: 100%;
 		font-family: "Alef";
 		margin: auto;
 		margin-bottom: 2%;
