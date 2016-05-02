@@ -258,7 +258,7 @@
 	}
 	#what_p
 	{
-		font-size: 3.5em;
+		font-size: 4em;
 		font-family: 'Open Sans', sans-serif;
 		color: forestgreen;
 		display: inline-block;
@@ -282,10 +282,10 @@
 	}
 	#second_p
 	{
-		font-size: 3em;
+		font-size: 2.5em;
 		font-family: 'Open Sans', sans-serif;
 		color: forestgreen;
-		margin: 0 2% 3% 2%;
+		margin: 0 5% 3% 5%;
 	}
 	#what
 	{
