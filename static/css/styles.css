@@ -272,6 +272,7 @@
 		display: inline-block;
 		margin-bottom: 3%;
 		background-color: green;
+		visibility: hidden
 		
 	}
 
@@ -760,7 +761,7 @@
     	width: 5%;
     	display: inline-block;
     	margin-left: 0px;
-    	visibility: hidden;
+    	visibility: visible;
     }
     #green_circle2
     {
